@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/paginas_direc.css" />
+</head>
+
+<body>
+    <section class="section-direc">
+        <section class="contenedor">
+            <section class="director">
+                <h2>Ing. José Tomás Jácome López</h2>
+                <h4>jt.jacome@uta.edu.ec</h4>
+                <h2>DIRECTOR</h2>
+            </section>
+
+            <!-- -------- mision ---------->
+            <section class="mision">
+                <h2 class="titulo-mision">MISION</h2>
+                <p>
+                    Tiene la misión de propender al desarrollo del talento humano como factor clave de éxito de la
+                    organización y gestión institucional, con altos niveles de eficiencia, eficacia y efectividad, para
+                    coadyuvar en el logro de la misión de la gestión Institucional.
+                </p>
+            </section>
+
+            <section class="tabla">
+                <!-- Pestañas -->
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'tab1')">
+                        Horario Atencion
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab2')">
+                        Dirección
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab3')">
+                        Ubicación
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab4')">
+                        Teléfonos
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab5')">
+                        Correo eletrónicos
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab6')">
+                        Servicion
+                    </button>
+                </div>
+
+                <div id="tab1" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>
+                        Lunes a Viernes de 08h30 a 12h30 y de 14h30 a 18h30
+                    </p>
+                </div>
+
+                <div id="tab2" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>Av. Los Chasquis y Río Payamino</p>
+                </div>
+
+                <div id="tab3" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>
+                        Edificio Ciencias Aplicadas - Campus Huachi
+                    </p>
+                </div>
+
+                <div id="tab4" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>03-2521081 – 03-2521021 Ext. 130 Dirección - Secretaría 119</p>
+                </div>
+
+                <div id="tab5" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>rrhh@uta.edu.ec</p>
+                </div>
+
+                <div id="tab6" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>
+                        * Cumplir y hacer cumplir las leyes, resoluciones, reglamentos, instructivos y demás normas
+                        conexas dentro de su jurisdicción administrativa, emitidas por la Universidad Técnica de Ambato.
+                    </p>
+                    <p>
+                        * Asesorar a los niveles directivos de la Institución, en aspectos relacionados con el Sistema
+                        de Desarrollo Institucional, Administración del Talento Humano y Bienestar Social.
+                    </p>
+                    <p>
+                        * Organizar y ejecutar los Subsistemas de Talento Humano: Sistema Informático Integrado del
+                        Desarrollo del Talento Humano, Planificación del Talento Humano, Clasificación de Puestos,
+                        Reclutamiento y Selección de Personal, Formación y Capacitación y, de Evaluación del Desempeño.
+                    </p>
+                    <p>
+                        * Elaborar y difundir manuales, procedimientos, reglamentos, instructivos y demás normas quesean
+                        necesarias para el cumplimiento de los objetivos institucionales.
+                    </p>
+                    <p>
+                        * Administrar el Sistema de Nómina.
+                    </p>
+                    <p>
+                        * Prestar asistencia y asesoramiento técnico en materia de su especialización.
+                    </p>
+                    <p>
+                        * Revisar y legalizar documentación e información de los productos y servicios de la Dirección y
+                        las unidades administrativas a su cargo.
+                    </p>
+                </div>
+            </section>
+        </section>
+        <script>
+            "use strict";
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                        " active",
+                        ""
+                    );
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Mostrar la pestaña 1 por defecto
+            document.getElementById("tab1").style.display = "block";
+            document.getElementsByClassName("tablinks")[0].className += " active";
+        </script>
+    </section>
+</body>
+
+</html>

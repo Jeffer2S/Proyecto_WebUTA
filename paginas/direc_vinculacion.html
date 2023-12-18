@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/paginas_direc.css" />
+</head>
+
+<body>
+    <section class="section-direc">
+        <section class="contenedor">
+            <section class="director">
+                <h2>Dr. Danilo Javier Altamirano Analuisa</h2>
+                <h4>danilojaltamirano@uta.edu.ec</h4>
+                <h2>DIRECTOR</h2>
+            </section>
+
+            <!-- -------- mision ---------->
+            <section class="mision">
+                <h2 class="titulo-mision">MISION</h2>
+                <p>
+                    Esta dirección tiene como como misión el planificar, organizar, dirigir, ejecutar y evaluar acciones, relacionadas con el Servicio a la Comunidad, Educación Continua, Asesoría y Consultoría y la Producción de bienes y/o servicios, fomento de procesos permanentes de vinculación de la Universidad Técnica de Ambato con el medio social, acordes con los principios de pertinencia y calidad.
+                </p>
+            </section>
+
+            <section class="tabla">
+                <!-- Pestañas -->
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'tab1')">
+                        Horario Atencion
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab2')">
+                        Dirección
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab3')">
+                        Ubicación
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab4')">
+                        Teléfonos
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab5')">
+                        Correo eletrónicos
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab6')">
+                        Servicion
+                    </button>
+                </div>
+
+                <div id="tab1" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>
+                        Lunes a Viernes de 08h30 a 12h30 y 14h30 a 18h30
+                    </p>
+
+                </div>
+
+                <div id="tab2" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>Av. Los Chasquis y Rio Payamino</p>
+                </div>
+
+                <div id="tab3" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>
+                        Edificio Académico, segundo piso - Campus Huachi
+                    </p>
+                    
+                </div>
+
+                <div id="tab4" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>03-2400428 ext. 100</p>
+                </div>
+
+                <div id="tab5" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>vinculacion@uta.edu.ec</p>
+                </div>
+
+                <div id="tab6" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>
+                        La Dirección de Vinculación con la Sociedad se encarga de planificar, dar seguimiento y ejecutar las acciones y procesos académicos de las áreas de proyectos de vinculación, prácticas pre-profesionales, seguimiento a graduados e inserción laboral. Las prácticas pre profesionales en sus componentes laboral y comunitario se basan en el diseño, ejecución y medición del impacto de la intervención universitaria mediante prácticas pre profesionales, impulsando la responsabilidad social mediante la generación de proyectos académicos de vinculación en su componente comunitario y la transferencia de tecnología y experiencias mediante las prácticas en el componente laboral amparados en los dominios institucionales.
+                    </p>
+                </div>
+            </section>
+        </section>
+        <script>
+            "use strict";
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                        " active",
+                        ""
+                    );
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Mostrar la pestaña 1 por defecto
+            document.getElementById("tab1").style.display = "block";
+            document.getElementsByClassName("tablinks")[0].className += " active";
+        </script>
+    </section>
+</body>
+
+</html>

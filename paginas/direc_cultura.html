@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/paginas_direc.css">
+</head>
+
+<body>
+    <section class="section-direc">
+
+        <section class="contenedor">
+            <section class="director">
+                <h2>Lcdo. Oscar Alberto Abril Flores</h2>
+                <h4>oscaraabrilf@uta.edu.ec</h4>
+                <h2>DIRECTOR</h2>
+            </section>
+
+            <!-- -------- mision ---------->
+            <section class="mision">
+                <h2 class="titulo-mision">MISION</h2>
+                <p>La Dirección de Cultura se encarga de planificar, establecer e implementar acciones de carácter artístico-cultural para fomentar la cultura en la comunidad universitaria y en la sociedad en general.</p>
+            </section>
+
+            <section class="tabla">
+                <!-- Pestañas -->
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'tab1')">Horario Atencion</button>
+                    <button class="tablinks" onclick="openTab(event, 'tab2')">Dirección</button>
+                    <button class="tablinks" onclick="openTab(event, 'tab3')">Ubicación</button>
+                    <button class="tablinks" onclick="openTab(event, 'tab4')">Teléfonos</button>
+                    <button class="tablinks" onclick="openTab(event, 'tab5')">Correo eletrónicos</button>
+                    <button class="tablinks" onclick="openTab(event, 'tab6')">Servicion</button>
+                </div>
+
+                <div id="tab1" class="tabcontent"> <!-- Contenido de cada pestaña -->
+                    <p>Lunes a Viernes 08h30 a 12h30 y de 14h30 a 18h30</p>
+
+                </div>
+
+                <div id="tab2" class="tabcontent"> <!-- Contenido de cada pestaña -->
+                    <p>Calles Juan Montalvo 1401 y Vicente Rocafuerte esquina</p>
+                </div>
+
+                <div id="tab3" class="tabcontent"> <!-- Contenido de cada pestaña -->
+                    <p>Centro Cultural Universitario</p>
+                </div>
+
+                <div id="tab4" class="tabcontent"> <!-- Contenido de cada pestaña -->
+                    <p>03-2826936</p>
+                </div>
+
+                <div id="tab5" class="tabcontent"> <!-- Contenido de cada pestaña -->
+                    <p>ccu@uta.edu.ec</p>
+                </div>
+
+                <div id="tab6" class="tabcontent"> <!-- Contenido de cada pestaña -->
+                    <p>* La Dirección de Cultura a medida del crecimiento de la Universidad Técnica de Ambato ha ido generando varias opciones para los estudiantes de pre grado y para la comunidad en general, espacios de sano esparcimiento productivo y gratuito entre ellos: talleres de pintura y dibujo, canto, danza folklórica, danza contemporánea, teatro, violín, guitarra, batería, clarinete y zancos.</p>
+                    <p>* Además oferta becas culturales para estudiantes de la U.T.A. como una manera de motivar a quienes gustan del arte; trabaja con distintas instituciones públicas y privadas con el único afán de ofrecer y difundir cultura en todas sus modalidades.</p>
+                    <p>* Esta dirección es custodio y responsable del mantenimiento del Museo de Ciencias Naturales, Historia y Arqueología mismo que cumple vinculación con la sociedad principalmente con unidades educativas de la zona 3 regentadas por el Ministerio de Educación, además trabaja directamente con el Ministerio del Ambiente y Ministerio de Cultura y Patrimonio Nacional.</p>
+                    <p>* Además de los servicios artísticos que presta la Dirección de Cultura ha generado una nueva iniciativa que responde al Modelo de Gestión de la UTA, basada en la inserción de cultura planetaria en la comunidad universitaria, por medio de la planificación de espacios de cine foro, clubes de debate, etc.</p>
+                </div>
+
+            </section>
+
+
+        </section>
+        <script>
+            "use strict";
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Mostrar la pestaña 1 por defecto
+            document.getElementById("tab1").style.display = "block";
+            document.getElementsByClassName("tablinks")[0].className += " active";
+        </script>
+    </section>
+</body>
+
+</html>

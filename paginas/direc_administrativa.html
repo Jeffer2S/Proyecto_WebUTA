@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/paginas_direc.css" />
+</head>
+
+<body>
+    <section class="section-direc">
+        <section class="contenedor">
+            <section class="director">
+                <h2>Abg. Milton Elder Naranjo Malan</h2>
+                <h4>me.naranjo@uta.edu.ec</h4>
+                <h2>DIRECTOR</h2>
+            </section>
+
+            <!-- -------- mision ---------->
+            <section class="mision">
+                <h2 class="titulo-mision">MISION</h2>
+                <p>
+                    Tiene por misión el brindar con eficiencia y eficacia productos y servicios de apoyo logístico en la
+                    entrega oportuna de equipos, materiales, suministros y otros servicios para generar la gestión
+                    Institucional demandados por los procesos Gobernantes, Agregadores de Valor, Habilitantes y clientes
+                    externos, de conformidad con la normativa que rige sobre la materia.
+                </p>
+            </section>
+
+            <section class="tabla">
+                <!-- Pestañas -->
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'tab1')">
+                        Horario Atencion
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab2')">
+                        Dirección
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab3')">
+                        Ubicación
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab4')">
+                        Teléfonos
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab5')">
+                        Correo eletrónicos
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab6')">
+                        Servicion
+                    </button>
+                </div>
+
+                <div id="tab1" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>
+                        De Lunes a Viernes de 08:30 a 12:30 y 14:30 a 18:30
+                    </p>
+                </div>
+
+                <div id="tab2" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>Av. Colombia y Chile</p>
+                </div>
+
+                <div id="tab3" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>
+                        Edificio Campus Ingahurco
+                    </p>
+                </div>
+
+                <div id="tab4" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>(03) - 3730260 ext. 5122</p>
+                </div>
+
+                <div id="tab5" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>dad@uta.edu.ec</p>
+                </div>
+
+                <div id="tab6" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>
+                        Brindar con eficiencia y eficacia productos y servicios de apoyo logístico en la entrega
+                        oportuna de equipos, materiales, suministros y otros servicios para generar la gestión
+                        Institucional demandados por los procesos gobernantes, agregadores de valor, habilitantes y
+                        clientes externos, de conformidad con la normativa que rige sobre la materia.
+                    </p>
+                </div>
+            </section>
+        </section>
+        <script>
+            "use strict";
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                        " active",
+                        ""
+                    );
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Mostrar la pestaña 1 por defecto
+            document.getElementById("tab1").style.display = "block";
+            document.getElementsByClassName("tablinks")[0].className += " active";
+        </script>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/paginas_direc.css" />
+</head>
+
+<body>
+    <section class="section-direc">
+        <section class="contenedor">
+            <section class="director">
+                <h2>Ing. Mg. Álvaro Fernando Vargas Álvarez</h2>
+                <h4>alvarofvargas@uta.edu.ec</h4>
+                <h2>DIRECTOR</h2>
+            </section>
+
+            <!-- -------- mision ---------->
+            <section class="mision">
+                <h2 class="titulo-mision">MISION</h2>
+                <p>
+                    Esta dirección tiene como misión el planificar, organizar, dirigir, ejecutar y evaluar acciones relacionadas con la Innovación, Propiedad Intelectual y Emprendimiento. Fomentará procesos permanentes de transferencia tecnológica de la Universidad Técnica de Ambato a la sociedad, acordes con los principios de pertinencia y calidad establecidos en la Constitución de la República y Ley Orgánica de Educación Superior.
+                </p>
+            </section>
+
+            <section class="tabla">
+                <!-- Pestañas -->
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'tab1')">
+                        Horario Atencion
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab2')">
+                        Dirección
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab3')">
+                        Ubicación
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab4')">
+                        Teléfonos
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab5')">
+                        Correo eletrónicos
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab6')">
+                        Servicion
+                    </button>
+                </div>
+
+                <div id="tab1" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>
+                        Lunes a Viernes de 08h30 a 12h30 y 14h30 a 18h30
+                    </p>
+                </div>
+
+                <div id="tab2" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>OFICINA DINNOVA: Avenida los Chasquis, entre Río Guayllabamba y RíoPayamino</p>
+                    <p>OFICINA COWORKING: Calle Vicente Rocafuerte y Quito (esquina)</p>
+                </div>
+
+                <div id="tab3" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>
+                        OFICINA DINNOVA: Edificio Académico, Cuarto Piso - Campus HuachiOFICINA DINNOVA: Edificio Académico, Cuarto Piso - Campus Huachi
+                    </p>
+                    <p>
+                        OFICINA COWORKING: Centro de Educación Continua de la Universidad Técnica de Ambato
+                    </p>
+                </div>
+
+                <div id="tab4" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>03-3700090. Ext. 83570</p>
+                </div>
+
+                <div id="tab5" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>dinnova@uta.edu.ec</p>
+                </div>
+
+                <div id="tab6" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>
+                        * Definir lineamientos, planes y metodologías para promover la cultura de innovación, propiedad intelectual y emprendimiento en los estudiantes, docentes e investigadores de la comunidad universitaria.
+                    </p>
+                    <p>
+                        * Brindar asesoría y realizar el acompañamiento, a los miembros de la comunidad universitaria, en la gestión de registros de propiedad intelectual de la Universidad.
+                    </p>
+                    <p>
+                        * Promover el fortalecimiento del talento humano en la comunidad universitaria a través de eventos, proyectos y programas que permitan el fortalecimiento la cultura de Innovación y Emprendimiento.
+                    </p>
+                </div>
+            </section>
+        </section>
+        <script>
+            "use strict";
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                        " active",
+                        ""
+                    );
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Mostrar la pestaña 1 por defecto
+            document.getElementById("tab1").style.display = "block";
+            document.getElementsByClassName("tablinks")[0].className += " active";
+        </script>
+    </section>
+</body>
+
+</html>

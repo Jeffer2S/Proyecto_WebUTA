@@ -1,0 +1,2189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../paginas/styles/estilos1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <title>Universidad Técnica de Ambato</title>
+</head>
+<body id="contenidoVariable">
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const opcion = urlParams.get('opcion');
+
+        let contenido = "";
+        switch (opcion) {
+            case '1':
+                contenido = `
+                <header>
+        <section class="contenedor-header">
+            <img src="../imagenes/logo-fcadm.png" alt="" class="imagen-header">
+            <img src="../imagenes/logo uta.webp" alt="" class="imagen-header">
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+        </section>
+    </header>
+    <main>
+        <section class="contenedor-infra">
+            <section class="infraestructura1">
+                <section class="nombreFacultad">
+                    <h1>Facultad de <br>Ciencias Administrativas</h1>
+                </section>
+                <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+            </section>
+        </section>
+        <section>
+            <div class="contenedor">
+                <div class="cont-autrd">
+                    <section class="textoautr">
+                        <h2>Autoridades</h2>
+                        <h3> DECANO: </h3>
+                        <p>Ing. MBA. Santiago Peñaherrera Z.</p>
+                        <h3> SUBDECANO: </h3>
+                        <p>Ing. MBA. José Herrera H.</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Misión y Visión</h2>
+                </section>
+                <img src="../imagenes/mv-facu1.png" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Historia</h2>    
+                </section>
+                <img src="../imagenes/historia-facu1.png" alt="" class="imagen-hist">
+                <section class="parrafos">
+                    <p>
+                    La promesa y posesión se realizó en Asamblea Universitaria el mismo día, de acuerdo a las disposiciones de la Ley
+                    de Educación Superior vigente a esa fecha. Secretaria de la Facultad fue nombrada Graciela Paredes Vásquez. Esta
+                    unidad académica inició sus importantes labores con 116 estudiantes, 14 profesores y 1 empleado. De 1969 a 1975
+                    se denomina Facultad de Administración y Gerencia.
+                    </p>
+                    <p>
+                        Desde el año lectivo 1975 – 1976 se da una nueva estructura con las especializaciones de Generalistas, 
+                    Organización de Empresas y Mercadotecnia. A partir del año lectivo 1979 se denomina Facultad de Ciencias Administrativas.
+                    
+                    </p>
+                </section>
+            </div>
+        </section>
+            <div class="contenedor">
+                <section class="titulo"
+                    <h2>Carreras y Programas</h2>
+                </section>
+                <div id="overlay" class="overlay"></div>
+                <section class="galeria-carreras">
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                    <a class="open-popup-link" href="#" onclick="mostrarCarrera(1)"><h3>Carrera de Administración de Empresas</h3></a>    
+                        </section>
+                    </section>
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                        <a class=open-popup-link href="#" onclick="mostrarCarrera(2)"><h3>Carrera de Mercadotécnia</h3></a>
+                        </section>
+                    </section>
+                </section>
+                <div id="carrera1" class="popup">
+                    <button onclick="cerrarCarrera(1)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                        <h2>Carrera de Administración de Empresas</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio1" class="active"></a>
+                            <a href="#autoridades1">Autoridades</a>
+                            <a href="#info1">Información General</a>
+                            <a href="#mv1">Misión y Visión</a>
+                            <a href="#malla1">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido" >
+                            <div id="inicio1">
+                                <img src="../imagenes/infraestructurafacu1.png" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades1">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                <img src="../imagenes/coor_ade.png" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Ing.MBA. Vinicio Mejía V. </p>
+                                <h3>Contacto: </h3>
+                                <p> carlosvmejia@uta.edu.ec <br>
+                                3700090 ext 80906
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>8 Semestres</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Licenciado(a) en Administración de Empresas</p>
+
+                                    <h3>OBJETIVO</h3>
+
+                                    Preparar profesionales en administración de empresas con conocimientos teórico-prácticos con enfoque 
+                                    hacia la economía global, conocimiento holístico, aplicación de procesos empresariales y 
+                                    de investigación científica utilizando herramientas técnico-científicas, para dirigir con eficiencia
+                                    y eficacia una organización pública o privada, aplicando estrategias innovadoras con responsabilidad 
+                                    social y ambiental que contribuyan al cambio de la matriz productiva con sentido crítico, ético, 
+                                    humanístico y respeto a la interculturalidad de conformidad a los objetivos del buen vivir.
+
+                                    <h3>PERFIL DE EGRESO</h3>
+
+                                    Análisis de los factores sociales y económicos de las empresas <br>
+                                    <br>Programación, ejecución, seguimiento y evaluación del proceso administrativo de las empresas.
+                                    <br><br>Gestión de mercadeo acorde a las necesidades y exigencias de los consumidores
+                                    <br><br>Formulación, implementación y reingeniería de sistemas integrales de gestión: calidad, ambiente, seguridad industrial, riesgos, control interno, entre otras.
+                                    <br><br>Gestión de las finanzas de las empresas
+                                    <br><br>Producción de bienes y servicios con valor agregado y con énfasis en la investigación e innovación
+                                    <br><br>Planificación, organización y ejecución de los sistemas de la Administración del Talento Humano.
+                                    <br><br>Gestión de los sistemas de información y control
+                                    <br><br>Gestión de microempresas y organizaciones de la economía popular y solidaria
+                                </section>
+                                </section>
+                            </div>
+                            <div id="mv1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>    
+                                <p>
+                                    Formar administradores profesionales, competentes, con criterio emprendedor e innovador, con 
+                                    conciencia social, que difundan, apliquen y promuevan el conocimiento científico para dar
+                                    soluciones empresariales efectivas.
+                                </p>
+                                <h2>Visión</h2>
+                                <p>
+                                    La Carrera de Administración de Empresas de la Universidad Técnica de Ambato, en el año 2024, 
+                                    será líder a nivel nacional en la formación de administradores del más alto nivel académico que,
+                                    respondan a las nuevas y futuras demandas de la empresa, la sociedad y el Estado.
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla1">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/malla_ae.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="carrera2" class="popup">
+                    <button onclick="cerrarCarrera(2)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                            <h2>Carrera de Mercadotecnia</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio2" class="active"> </a>
+                            <a href="#autoridades2">Autoridades</a>
+                            <a href="#info2">Información General</a>
+                            <a href="#mv2">Misión y Visión</a>
+                            <a href="#malla2">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido">
+                            <div id="inicio2">
+                                <img src="../imagenes/infraestructurafacu1.png" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades2">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                <img src="../imagenes/coor_mer.jpg" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Ing. Mg. Leonado Ballesteros L.</p>
+                                <h3>Contacto: </h3>
+                                <p> lg.ballesteros@uta.edu.ec <br>
+                                    3700090 ext 81701 – 81702
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info2">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>8 Semestres</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Licenciado/a en Mercadotecnia</p>
+
+                                    <h3>OBJETIVO GENERAL:</h3>
+
+                                    Formar profesionales humanistas, con visión holística, pensamiento estratégico, líderes en orientar y dirigir el crecimiento sostenible y sustentable de las empresas e impulsar el desarrollo de la Matriz Productiva, potencializando la capacidad emprendedora y la generación del conocimiento comercial en distintos escenarios del mercado convencional y digital, respetando la identidad cultural y sus valores, a través de metodologías activas que combinan la teoría y la práctica para la innovación creativa en un conjunto ordenado de saberes, pertinencia y emprendizajes, promoviendo la generación de investigación científica en el campo comercial, considerado como eje de innovación, vinculación a través del comercio justo, el consumo ético, con alto nivel de responsabilidad social y ambiental.
+                                    <h3>PERFIL DE EGRESO:</h3>
+                                    <p>Analiza la función de la mercadotecnia, comunicación técnica asertiva, comprendiendo textos orales y escritos contextualizando en el campo de la administración.
+                                    <br><br>Aplica la mercadotecnia con conciencia de derechos y obligaciones, aplicando técnicas estadísticas, lógico- matemático y para la resolución de problemas, apoyándose en el conocimiento científico, relacionado dinámicas entre la ciencia y curiosidad humana.
+                                    <br><br>Analiza críticamente los elementos del entorno empresarial, equilibrando el espíritu emprendedor y basándose en proyecciones estadísticas, comunicaciones creativas y digitales, que resuelvan las problemáticas de la realidad económica.
+                                    <br><br>Incorpora apropiadamente los instrumentos tecnológicos para un comercio ético, entendiendo las necesidades del consumidor a través del uso de herramientas financieras. Relacionando los principios y fundamentos de la deontología con la vida profesional y su impacto en el campo económico y social.
+                                    <br><br>Gestiona el prestigio e imagen en línea de la empresa, seleccionado los mejores medios y canales para desarrollar procesos y técnicas de venta, mediante la difusión creativa, apresurando nuevos mercados en base a tradiciones y saberes ancestrales para lograr una ventaja competitiva con responsabilidad social que determinan el comportamiento del consumidor con investigación de mercados de forma integral y metódica inmersos en los fenómenos macroeconómicos.
+                                    <br><br>Desarrolla modelos de negocios con liderazgo, integrando equipos de trabajo inter, trans y multidisciplinarios, implementando estrategias de mercado competitivas, a través de neuromarketing y marketing de servicios.
+                                    <br><br>Desarrolla ventajas competitivas y comparativas, reconociendo las funciones de la gerencia de mercadotecnia, determinando los posibles comportamientos deseados en el consumidor, acorde a las necesidades, estableciendo precios justos con criterios técnicos en el desarrollo de productos, conforme a una apropiada mezcla de promoción.
+                                    <br><br>Gestiona eficientemente la mezcla de Mercadotecnia en contextos internacionales, con un planteamiento de planes de negocios integrales, alimentados por sistema de información gerencial, con la aplicación previa de simuladores de negocios, orientados en el diseño y desarrollo de marcas a través de proyectos eco sustentables para la comprensión crítica de la interacción del ser humano con el medio ambiente.
+                                    <br><br>Elabora planes de negocios integrales, aplicando estrategias del comercio al por menor y mayor, optimizando la cadena de abastecimiento y generando beneficio a los integrantes de la cadena de valor, demuestra su conocimiento teórico práctico resolviendo reactivos y problemas mediante proyecto de emprendimiento e investigación.
+                                    </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="mv2">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>
+                                <p>
+                                    Formar profesionales líderes competentes en Mercadotecnia, con visión humanista y pensamiento crítico
+                                    a través de la Docencia, la Investigación y la Vinculación, que apliquen, promuevan y difundan el
+                                    conocimiento respondiendo a las necesidades del mercado nacional e internacional.
+                                </p>
+                                <h2>Visión</h2>
+                                <p>
+                                    La Carrera de Mercadotecnia de la Universidad Técnica de Ambato por sus niveles de excelencia se 
+                                    constituirá como un centro de formación superior con liderazgo y proyección nacional e internacional.
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla2">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/malla_mer.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Universidad Técnica de Ambato</p>
+    </footer>
+                `;
+                break;
+            case '2':
+                contenido = `
+                <header>
+        <section class="contenedor-header">
+            <img src="../imagenes/logo-fcial-2020.png" alt="" class="imagen-header">
+            <img src="../imagenes/logo uta.webp" alt="" class="imagen-header">
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+        </section>
+    </header>
+    <main>
+        <section class="contenedor-infra">
+            <section class="infraestructura2">
+                <section class="nombreFacultad">
+                    <h1>Facultad de <br>Ciencia e Ingeniería en Alimentos y Biotecnología</h1>
+                </section>
+                <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+            </section>
+        </section>
+        <section>
+            <div class="contenedor">
+                <div class="cont-autrd">
+                    <section class="textoautr">
+                        <h2>Autoridades</h2>
+                        <h3> DECANA: </h3>
+                        <p>Dra. Mirari Arancibia Soria.</p>
+                        <h3> SUBDECANO: </h3>
+                        <p>Ing. Alex Valencia Silva, Mg.</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Misión y Visión</h2>
+                </section>
+                <img src="../imagenes/mision-vision-alimentos.png" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Historia</h2>    
+                </section>
+                <img src="../imagenes/historia-alimentos.png" alt="" class="imagen-hist">
+            </div>
+        </section>
+            <div class="contenedor">
+                <section class="titulo"
+                    <h2>Carreras y Programas</h2>
+                </section>
+                <div id="overlay" class="overlay"></div>
+                <section class="galeria-carreras">
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                    <a class="open-popup-link" href="#" onclick="mostrarCarrera(1)"><h3>Carrera de Alimentos</h3></a>    
+                        </section>
+                    </section>
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                        <a class=open-popup-link href="#" onclick="mostrarCarrera(2)"><h3>Carrera de Biotecnología</h3></a>
+                        </section>
+                    </section>
+                </section>
+                <div id="carrera1" class="popup">
+                    <button onclick="cerrarCarrera(1)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                        <h2>Carrera de Alimentos</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio1" class="active"></a>
+                            <a href="#autoridades1">Autoridades</a>
+                            <a href="#info1">Información General</a>
+                            <a href="#mv1">Misión y Visión</a>
+                            <a href="#malla1">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido" >
+                            <div id="inicio1">
+                                <img src="../imagenes/inf_alimentos.png" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades1">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                <img src="../imagenes/coor_ali.jpg" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Dr. Homero Vargas.</p>
+                                <h3>Contacto: </h3>
+                                <p>alimentos@uta.edu.ec<br>
+                                    (032)-400987 (Ext. 5520)
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>8 Ciclos</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Ingeniero en Alimentos</p>
+
+                                    <h3>PERFIL PROFESIONAL</h3>
+
+                                    Elaborar y ejecutar proyectos de investigación haciendo uso de ciencias básicas y aplicadas.<br>
+                                    <br>Aportar al cambio de la matriz productiva.
+                                    <br><br>Desarrollar programas y proyectos de investigación enfocados en la obtención de
+                                    productos saludables, que permitan reducir tasas de desnutrición local y regional.
+                                    <br><br>Velar por el cuidado del recurso natural: agua, suelo y aire.
+                                    <br><br>Diseñar y controlar sistemas de tratamiento biológico de residuos.
+                                    <br><br>Investigar sobre la actividad funcional de compuestos bioactivos, o con posible actividad
+                                    tóxica y/o alergénica.
+                                    <br><br>Elaborar, coordinar o ejecutar proyectos que combatan la desnutrición y mal nutrición.
+                                    <br><br>Verificar el cumplimiento de Normativa de Inocuidad Alimentaria en empresas
+                                    productoras de alimentos.
+                                    <br><br>Asegurar la calidad de procesos productivos, la inocuidad de los alimentos y el cuidado
+                                    del medio ambiente, en conformidad con lo exigido por las normas ISO.
+                                    
+                                </section>
+                                </section>
+                            </div>
+                            <div id="mv1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>    
+                                <p>
+                                    Formar profesionales líderes competentes en el campo de los Alimentos, con visión humanística y pensamiento crítico a través de la Docencia, la Investigación y la Vinculación, que apliquen, promuevan y difundan el conocimiento, respondiendo a las necesidades del país.
+                                </p>
+                                <h2>Visión</h2>
+                                <p>
+                                    La carrera de Alimentos por sus niveles de excelencia se constituirá como una unidad de formación superior con liderazgo y proyección nacional e internacional.
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla1">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/malla_curricular_AL.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="carrera2" class="popup">
+                    <button onclick="cerrarCarrera(2)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                        <h2>Carrera de Biotecnología</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio2" class="active"></a>
+                            <a href="#autoridades2">Autoridades</a>
+                            <a href="#info2">Información General</a>
+                            <a href="#mv2">Misión y Visión</a>
+                            <a href="#malla2">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido" >
+                            <div id="inicio2">
+                                <img src="../imagenes/inf_alimentos.png" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades2">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                <img src="../imagenes/coor_bio.jpg" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Dra. Liliana Lalaleo Córdova</p>
+                                <h3>Contacto: </h3>
+                                <p>biotecnologia@uta.edu.ec<br>
+                                    (032)-400987 (Ext. 5522)
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info2">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>8 Ciclos</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Ingeniero biotecnólogo</p>
+
+                                    <h3>PERFIL PROFESIONAL</h3>
+
+                                    Jefe de laboratorio de análisis<br>
+                                    <br>Construir e interpretar curvas de crecimiento microbiano, curvas de calibración, curvas
+                                    de estabilidad de productos, entre otras relacionadas con la formación profesional.
+                                    <br><br>Preparar soluciones para análisis de productos biotecnológicos mediante la metodología
+                                    establecida en la normatividad vigente.
+                                    <br><br>Aplicar procedimientos y metodologías analíticas para caracterizar materias primas y
+                                    productos de un proceso biotecnológico.
+                                    <br><br>Interpretar los resultados obtenidos mediante procedimientos y metodologías analíticas.
+                                    <br><br>Elaborar informes técnicos de los resultados obtenidos mediante procedimientos y
+                                    metodologías analíticas
+                                    <br><br>Comunicar efectivamente los resultados obtenidos mediante procedimientos y
+                                    metodologías analíticas.
+                                    <br><br>Realizar una valoración científica y económica sobre el presupuesto anual del
+                                    funcionamiento de los laboratorios y proponer nuevas inversiones para la renovación o
+                                    ampliación de análisis.
+                                    <br><br>Identificar y caracterizar microorganismos de uso industrial y su aplicación y obtención de
+                                    Bioproductos.
+                                    
+                                </section>
+                                </section>
+                            </div>
+                            <div id="mv2">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>    
+                                <p>
+                                    Formar profesionales líderes competentes en el campo de la Biotecnología, con visión humanística y pensamiento crítico a través de la Docencia, la Investigación y la Vinculación, que apliquen, promuevan y difundan el conocimiento, respondiendo a las necesidades del país.
+                                </p>
+                                <h2>Visión</h2>
+                                <p>
+                                    La carrera de Biotecnología por sus niveles de excelencia se constituirá como una unidad de formación superior con liderazgo y proyección nacional e internacional.
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla2">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/malla_curricular_BT.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Universidad Técnica de Ambato</p>
+    </footer>
+                `;
+                break;
+            case '3':
+                contenido = `
+                <header>
+        <section class="contenedor-header">
+            <img src="../imagenes/logo-jurisprudencia-2020.png" alt="" class="imagen-header">
+            <img src="../imagenes/logo uta.webp" alt="" class="imagen-header">
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+        </section>
+    </header>
+    <main>
+        <section class="contenedor-infra">
+            <section class="infraestructura3">
+                <section class="nombreFacultad">
+                    <h1>Facultad de <br>Jurisprudencia y Ciencias Sociales</h1>
+                </section>
+                <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+            </section>
+        </section>
+        <section>
+            <div class="contenedor">
+                <div class="cont-autrd">
+                    <section class="textoautr">
+                        <h2>Autoridades</h2>
+                        <h3> DECANO: </h3>
+                        <p>Dr. Ángel Patricio Poaquiza Poaquiza, Mg.</p>
+                        <h3> SUBDECANO: </h3>
+                        <p>Dr. Borman Renán Vargas Villacrés PhD.</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Misión y Visión</h2>
+                </section>
+                <img src="../imagenes/mision_vision_jurisprudencia.png" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Historia</h2>    
+                </section>
+                <img src="../imagenes/historia-jurisprudencia.png" alt="" class="imagen-hist">
+            </div>
+        </section>
+            <div class="contenedor">
+                <section class="titulo"
+                    <h2>Carreras y Programas</h2>
+                </section>
+                <div id="overlay" class="overlay"></div>
+                <section class="galeria-carreras">
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                    <a class="open-popup-link" href="#" onclick="mostrarCarrera(1)"><h3>Derecho</h3></a>    
+                        </section>
+                    </section>
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                        <a class=open-popup-link href="#" onclick="mostrarCarrera(2)"><h3>Comunicación Social</h3></a>
+                        </section>
+                    </section>
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                        <a class=open-popup-link href="#" onclick="mostrarCarrera(3)"><h3>Trabajo Social</h3></a>
+                        </section>
+                    </section>
+                </section>
+                <div id="carrera1" class="popup">
+                    <button onclick="cerrarCarrera(1)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                        <h2>Carrera de Derecho</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio1" class="active"></a>
+                            <a href="#autoridades1">Autoridades</a>
+                            <a href="#info1">Información General</a>
+                            <a href="#mv1">Misión y Visión</a>
+                            <a href="#malla1">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido" >
+                            <div id="inicio1">
+                                <img src="../imagenes/inf_juris.jpg" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades1">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                <img src="../imagenes/coor_der.jpg" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Ab. Juan Pablo Montero Solano, Mg.</p>
+                                <h3>Contacto: </h3>
+                                <p>jp.montero@uta.edu.ec
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>9 Semestres</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Abogado</p>
+
+                                    <h3>OBJETIVO GENERAL</h3>
+                                    <p>Generar profesionales con profundos conocimientos del derecho , habilidades y destrezas que estén acordes con el desarrollo legal y tecnológico con excelencia, ética basado en principios deontológicos.
+                                    </p>
+                                        <h3>PERFIL DE EGRESO</h3>
+                                    Formación jurídica, ética y humanística para asistir a las personas naturales y jurídicas en la defensa de sus derechos constitucionales y legales.
+                                    <br><br>Desarrollo de habilidades y destrezas adecuadas a los procesos judiciales para ejercer con eficiencia la defensoría de los derechos de los litigantes.
+                                    <br><br>Asesoría en contiendas legales, para proteger los derechos privados individuales y colectivos en base a la normativa civil vigente.
+                                    <br><br>Representa jurídicamente en el campo constitucional, para garantizar la defensa de los derechos individuales y colectivos consagrados en la Constitución de la República.
+                                    <br><br>Desarrolla destrezas de redacción y expresión utilizando términos jurídicos precisos y claros.
+                                    <br><br>Litiga en procesos legales para garantizar la tutela jurídica y el debido proceso de las partes mediante la potestad punitiva, respetando los tratados, convenios internacionales y en especial las normas penales pertinentes.
+                                    <br><br>Domina procedimientos de estructuración orgánica, funcional y jurídica de las sociedades civiles, mercantiles, financieras, laborales y gremiales.
+                                    
+                                </section>
+                                </section>
+                            </div>
+                            <div id="mv1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>    
+                                <p>
+                                    La Facultad de Jurisprudencia y Ciencias Sociales con su Carrera de Derecho, forma profesionales líderes competentes, con visión humana y pensamiento crítico a través de la docencia, la investigación y la vinculación, que apliquen, promuevan y difundan el conocimiento respondiendo a las necesidades del país.</p>
+                                <h2>Visión</h2>
+                                <p>
+                                    La Facultad de Jurisprudencia y Ciencias Sociales con su Carrera de Derecho, como parte de la Universidad Técnica de Ambato por sus niveles de excelencia se constituirá como una unidad académica de formación superior con liderazgo y proyección nacional e internacional.</p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla1">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/malla_derecho_2020.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="carrera2" class="popup">
+                    <button onclick="cerrarCarrera(2)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                        <h2>Carrera de Comunicación Social</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio2" class="active"></a>
+                            <a href="#autoridades2">Autoridades</a>
+                            <a href="#info2">Información General</a>
+                            <a href="#mv2">Misión y Visión</a>
+                            <a href="#malla2">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido" >
+                            <div id="inicio2">
+                                <img src="../imagenes/inf_juris.jpg" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades2">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                <img src="../imagenes/coor_com.jpeg" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Lcdo. Omar Fabricio Soto Dávila, Mg.</p>
+                                <h3>Contacto: </h3>
+                                <p>of.soto@uta.edu.ec
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info2">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>9 Semestres</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Licenciado en Comunicación</p>
+
+                                    <h3>OBJETIVO GENERAL</h3>
+                                    <p>Contribuir al desarrollo del país mediante la formación de profesionales íntegros con amplias competencias intelectuales y técnicas en el campo de la Comunicación con idoneidad cultural y ética, con conciencia crítica y con el dominio en el manejo teórico, metodológico y práctico que responda a las necesidades de transformación y desarrollo nacional y regional.</p>
+                                    <h3>PERFIL DE EGRESO</h3>
+
+                                    La planificación del programa de comunicación garantiza que cada estudiante haya alcanzado el Perfil de Egreso al momento de su graduación, con los mecanismos utilizados para su validación social, es decir que cuente con amplios conocimientos teóricos y prácticos, grandes aptitudes para el discurso periodístico, un manejo adecuado de tecnologías que le permitan formular, gestionar y ejecutar sus actividades de campo, un desarrollo de pensamiento crítico, un elevado sentido ético, entre otras cualidades, el egresado de la Carrera de Comunicación con estas referencias debe alcanzar los siguientes resultados de formación:
+
+                                    <br><br>Desarrollar nuevas maneras de hacer comunicación que sean expresión de creatividad humana y que generen la participación para la construcción de nuevos mundos con sentido.
+
+                                    <br><br>Articular acciones de comunicación con procesos sociales, políticos, económicos y culturales del país, como base del compromiso para la comprensión y la intervención social, en aras de generar una conciencia social.
+
+                                    <br><br>Tener una visión universal y holística (esto es, universitaria) que permita comprender la transversalidad de la comunicación por su intrínseca interrelación con los demás quehaceres humanos; conocer sistemáticamente el mundo que nos rodea y la realidad específica en la que hemos de intervenir; tener una perspectiva histórica y amplia del mundo que posibilite la apropiación crítica de la cultura para articular el interés público con los proyectos personales.
+
+                                    <br><br>Realizar estudio, análisis, reflexión y producción de la comunicación a partir de núcleos problemáticos que respondan a situaciones en las que intervienen las acciones de comunicación y que por ello sean tareas por descifrar, comprender y proyectar.
+
+                                    <br><br>Asumir la investigación como fundamento y respaldo de cualquiera de las actividades comunicacionales que se realicen, en las que se haga presente la curiosidad y admiración, la observación y sistematización rigurosas, la visión analítica y crítica, buscando fomentar la actitud investigativa como base de toda acción profesional.
+
+                                    <br><br>Diseñar y gestionar proyectos que enmarquen y den mayor dimensión a los productos y procesos de comunicación, es decir, gestor de proyectos en todos los campos.
+                                    
+                                </section>
+                                </section>
+                            </div>
+                            <div id="mv2">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>    
+                                <p>
+                                    La carrera de Comunicación de la Universidad Técnica de Ambato, por sus niveles de excelencia, se constituirá en una unidad académica de formación superior con liderazgo y proyección nacional e internacional a través del manejo contextualizado de los procesos de comunicación social.</p>
+                                <h2>Visión</h2>
+                                <p>
+                                    Formar profesionales líderes competentes en el ámbito de la Comunicación con visión humanista-integrador, socializante, y crítico, a través de la investigación y la vinculación que apliquen y difundan el conocimiento, respondiendo a las necesidades del país. </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla2">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/MALLA_CURRICULAR_COMUNICACIN_2020.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="carrera3" class="popup">
+                    <button onclick="cerrarCarrera(3)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                        <h2>Trabajo Social</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio3" class="active"></a>
+                            <a href="#autoridades3">Autoridades</a>
+                            <a href="#info3">Información General</a>
+                            <a href="#mv3">Misión y Visión</a>
+                            <a href="#malla3">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido" >
+                            <div id="inicio3">
+                                <img src="../imagenes/inf_juris.jpg" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades3">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                <img src="../imagenes/coor_tras.jpg" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Lcda. Teresa de Jesús Paredes Ruiz, Mg.</p>
+                                <h3>Contacto: </h3>
+                                <p>tdj.ruiz@uta.edu.ec
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info3">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>10 Semestres</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Licenciado en Trabajo Social</p>
+                                    <h3>OBJETIVO GENERAL</h3>
+                                    <p>Formar profesionales íntegros con amplias competencias intelectuales y técnicas en el campo del Trabajo Social con idoneidad en la gestión del talento humano para propender al desarrollo humano integral y Capacitar en la atención a las demandas de los sectores sociales, mediante procesos de sensibilización, organización y participación para la solución de la problemática social, asesorando y gestionando en organismos públicos, privados y organizaciones de la sociedad, programas y proyectos orientados al desarrollo humano integral.</p>
+                                    <h3>PERFIL DE EGRESO</h3>
+                                    El egresado de la Licenciatura en Trabajo Social podrá desempeñarse con eficacia, eficiencia, responsabilidad y sentido humanitario en equipos tanto multidisciplinarios como interdisciplinarios, en las áreas y campos profesionales de la salud, educación, familia, protección y restitución de derechos, medio-ambiente, recreación y cultura, jurídico-penitenciaria y laboral, a través de la utilización de recursos teóricos-metodológicos y técnicos.
+                                </section>
+                                </section>
+                            </div>
+                            <div id="mv3">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>    
+                                <p>
+                                    Formar profesionales en Trabajo Social, lideres competentes, con fundamento integral, científico – técnico, ético, moral, con visión humanista y pensamiento crítico a través de la investigación y vinculación que promuevan y difundan el conocimiento, respondiendo a las necesidades sociales del país.</p>
+                                <h2>Visión</h2>
+                                <p>
+                                    La Carrera de Trabajo Social de la Universidad Técnica de Ambato, por sus niveles de excelencia liderará y se constituirá en una unidad de formación superior mediante el impulso permanente del desarrollo del ser humano con liderazgo y proyección nacional e internacional.</p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla3">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/MALLA_CURRICULAR_TS.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Universidad Técnica de Ambato</p>
+    </footer>
+                `;
+                break;
+            case '4':
+                contenido = `
+                <header>
+        <section class="contenedor-header">
+            <img src="../imagenes/logo-sitio-fcaud.png" alt="" class="imagen-header">
+            <img src="../imagenes/logo uta.webp" alt="" class="imagen-header">
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+        </section>
+    </header>
+    <main>
+        <section class="contenedor-infra">
+            <section class="infraestructura4">
+                <section class="nombreFacultad">
+                    <h1>Facultad de <br>Contabilidad y Auditoría</h1>
+                </section>
+                <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+            </section>
+        </section>
+        <section>
+            <div class="contenedor">
+                <div class="cont-autrd">
+                    <section class="textoautr">
+                        <h2>Autoridades</h2>
+                        <h3> DECANA: </h3>
+                        <p>Dra. Alexandra Tatiana Valle Álvarez Mg.</p>
+                        <h3> SUBDECANO: </h3>
+                        <p>Dr. Tito Patricio Mayorga Morales Mg.</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Misión y Visión</h2>
+                </section>
+                <img src="../imagenes/mv-contabilidad.png" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Historia</h2>    
+                </section>
+                <img src="../imagenes/historia-contabilidad.png" alt="" class="imagen-hist">
+            </div>
+        </section>
+            <div class="contenedor">
+                <section class="titulo"
+                    <h2>Carreras y Programas</h2>
+                </section>
+                <div id="overlay" class="overlay"></div>
+                <section class="galeria-carreras">
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                    <a class="open-popup-link" href="#" onclick="mostrarCarrera(1)"><h3>Contabilidad y Auditoría</h3></a>    
+                        </section>
+                    </section>
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                        <a class=open-popup-link href="#" onclick="mostrarCarrera(2)"><h3>Economía</h3></a>
+                        </section>
+                    </section>
+                </section>
+                <div id="carrera1" class="popup">
+                    <button onclick="cerrarCarrera(1)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                        <h2>Carrera de Contabilidad y Auditoría</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio1" class="active"></a>
+                            <a href="#autoridades1">Autoridades</a>
+                            <a href="#info1">Información General</a>
+                            <a href="#mv1">Misión y Visión</a>
+                            <a href="#malla1">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido" >
+                            <div id="inicio1">
+                                <img src="../imagenes/inf_contab.png" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades1">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                <img src="../imagenes/coor_cont.png" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Ab. Juan Pablo Montero Solano, Mg.</p>
+                                <h3>Contacto: </h3>
+                                <p>jp.montero@uta.edu.ec
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>8 Semestres</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Licenciado/a en Contabilidad y Auditoría CPA.</p>
+
+                                    <h3>INTRODUCCIÓN</h3>
+                                    <p>La tarea del Contador Auditor está vinculada con la actividad de las organizaciones cualquiera sea su forma jurídica, persigan o no fines de lucro, y con el contexto en que dichas organizaciones se desenvuelven y por lo tanto con las necesidades que de ellas se deriven para lo cual no basta con los conocimientos teórico - prácticos que les permitan identificar la problemática que se presenta en las organizaciones, sino también que tengan las competencias genéricas para racionalizar y comprender a profundidad las necesidades de los entes económicos y respondan ante dichos problemas proponiendo soluciones que generen cambios y mejoras en el corto, mediano y largo plazo.</p>
+                                    <h3>PERFIL DE EGRESO</h3>
+                                    El egresado de la Carrera de Contabilidad y Auditoría podrá:
+                                    <br><br>Desarrollar el control y análisis de los procesos que generan información financiera en los sectores de su influencia, para apoyar la toma de decisiones, utilizando la comunicación verbal y no verbal, tecnologías de la información y procesos de investigación de fuente nacional o internacional.    
+                                    <br><br>Participar en el diseño de sistemas financieros de acuerdo a las buenas prácticas establecidas por la normativa nacional e internacional, proponiendo alternativas de mejoramiento que coadyuven a mantener una estructura financiera sólida de la empresa.
+                                    <br><br>Participar en la evaluación y determinación de la razonabilidad de la información financiera, para fines internos y externos relacionados con el ámbito fiscal.
+
+                                </section>
+                                </section>
+                            </div>
+                            <div id="mv1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>    
+                                <p> 
+                                    La Carrera de Contabilidad y Auditoría formará profesionales líderes competentes, con visión humanista y pensamiento crítico a través de la Docencia, la Investigación y la Vinculación, que apliquen, promuevan y difundan el conocimiento respondiendo a las necesidades del país.
+                                </p>    
+                                <h2>Visión</h2>
+                                <p>
+                                    La Carrera de Contabilidad y Auditoría como parte de la Universidad Técnica de Ambato por sus niveles de excelencia se constituirá como un centro de formación superior con liderazgo y proyección nacional e internacional.
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla1">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/malla_curricular_contabilidad_2020.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="carrera2" class="popup">
+                    <button onclick="cerrarCarrera(2)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                        <h2>Carrera de Economía</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio2" class="active"></a>
+                            <a href="#autoridades2">Autoridades</a>
+                            <a href="#info2">Información General</a>
+                            <a href="#mv2">Misión y Visión</a>
+                            <a href="#malla2">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido" >
+                            <div id="inicio2">
+                                <img src="../imagenes/inf_contab.png" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades2">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                <img src="../imagenes/coor_econ.png" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Ec. Nelson Lascano Aimacaña Mg.</p>
+                                <h3>Contacto: </h3>
+                                <p>nelsonrlascano@uta.edu.ec<br>
+                                    (032) 844362 - 848487 ext: 110
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info2">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>8 Semestres</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Economista</p>
+
+                                    <h3>INTRODUCCIÓN</h3>
+                                    <p>
+                                        La Carrera de Economía de la Facultad de Contabilidad y Auditoría de la Universidad Técnica de Ambato, es una carrera que forma profesionales competentes, emprendedores con visión humanista y pensamiento crítico que han respondido a las exigencias y requerimiento que el sector empresarial y de la sociedad en su conjunto han demandado.
+                                    </p>    
+                                    <h3>PERFIL DE EGRESO</h3>
+
+                                    El profesional en Economía estará en la capacidad de explicar la realidad económica y social de su entorno para diagnosticar, formular, evaluar y gestionar modelos, programas y proyectos de desarrollo local, productivo y empresarial con criterio sustentable, que permita la optimización en el uso de los recursos existentes. Además, será capaz de liderar grupos profesionales multidisciplinarios donde evaluará las distintas concepciones del pensamiento económico para proponer soluciones macroeconómicas utilizando métodos econométricos, información financiera para determinar escenarios previos a las decisiones de inversión y financiamiento y finalmente podrá generar emprendimientos innovadores que permitan incrementar la competitividad y el desarrollo a nivel empresarial, sectorial, regional y nacional.
+                                </section>
+                                </section>
+                            </div>
+                            <div id="mv2">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>    
+                                <p>
+                                    La Carrera de Economía formará profesionales líderes competentes, con visión humanista y pensamiento crítico a través de la Docencia, la Investigación y la Vinculación, que apliquen, promuevan y difundan el conocimiento respondiendo a las necesidades del país.
+                                </p>
+                                <h2>Visión</h2>
+                                <p>
+                                    La Carrera de Economía como parte de la Universidad Técnica de Ambato por sus niveles de excelencia se constituirá como un centro de formación superior con liderazgo y proyección nacional e internacional.
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla2">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/malla_curricular_economia_2020.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Universidad Técnica de Ambato</p>
+    </footer>
+                `;
+                break;
+            case '5':
+                contenido = `
+                <header>
+        <section class="contenedor-header">
+            <img src="../imagenes/logo-sitio-fche-2020.png" alt="" class="imagen-header">
+            <img src="../imagenes/logo uta.webp" alt="" class="imagen-header">
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+        </section>
+    </header>
+    <main>
+        <section class="contenedor-infra">
+            <section class="infraestructura5">
+                <section class="nombreFacultad">
+                    <h1>Facultad de <br>Ciencias Humanas y de la Educación</h1>
+                </section>
+                <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+            </section>
+        </section>
+        <section>
+            <div class="contenedor">
+                <div class="cont-autrd">
+                    <section class="textoautr">
+                        <h2>Autoridades</h2>
+                        <h3> DECANO: </h3>
+                        <p>Dr.Mg. Victor Hernandez</p>
+                        <h3> SUBDECANO: </h3>
+                        <p>Dr. Mg. Marcelo Nuñez</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Misión y Visión</h2>
+                </section>
+                <img src="../imagenes/mision-vision-humanas.png" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Historia</h2>    
+                </section>
+                <img src="../imagenes/historia-humanas.png" alt="" class="imagen-hist">
+            </div>
+        </section>
+            <div class="contenedor">
+                <section class="titulo"
+                    <h2>Carreras y Programas</h2>
+                </section>
+                <div id="overlay" class="overlay"></div>
+                <section class="galeria-carreras">
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                    <a class="open-popup-link" href="#" onclick="mostrarCarrera(1)"><h3>Turismo</h3></a>    
+                        </section>
+                    </section>
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                        <a class=open-popup-link href="#" onclick="mostrarCarrera(2)"><h3>Psicopedagogía</h3></a>
+                        </section>
+                    </section>
+                </section>
+                <div id="carrera1" class="popup">
+                    <button onclick="cerrarCarrera(1)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                        <h2>Carrera de Turismo</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio1" class="active"></a>
+                            <a href="#autoridades1">Autoridades</a>
+                            <a href="#info1">Información General</a>
+                            <a href="#mv1">Misión y Visión</a>
+                            <a href="#malla1">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido" >
+                            <div id="inicio1">
+                                <img src="../imagenes/inf_cienhum.png" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades1">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                <img src="../imagenes/coor_turismo.jpg" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Dr. Sanchez Guerrero Daniel Oswaldo</p>
+                                <h3>Contacto: </h3>
+                                <p>do.sanchez@uta.edu.ec
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>8 Semestres</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Licenciado/a en Turismo</p>
+
+                                    <h3>INTRODUCCIÓN</h3>
+                                    <p>
+                                        La carrera de Turismo de la Universidad Técnica de Ambato aprobada en la ciudad de San Francisco de Quito, D. M a los once (11) días del mes de enero de 2017 en la Primera Sesión Ordinaria del Pleno del Consejo de Educación Superior del año 2017 con Resolución RPC-SO-01-No.011·2017, a través de su malla curricular, incorpora ejes transversales, contenidos, saberes, valores, diversidad, enfoque de género, aspectos del ámbito turístico enlazados con la multiculturalidad, diversidad cultural, interculturalidad, identidad, entre otros que le dan realmente un matiz transdisciplinario y multidisciplinario, por medio de metodologías como: la construcción del conocimiento por parte de los estudiantes a través de la teoría pero fortalecida a través de la práctica en cada una de las salidas al campo y a los escenarios turísticos donde el contacto con la realidad genera un aprendizaje continuo; el desarrollo del pensamiento crítico del estudiante para involucrar un desarrollo cognitivo de orden superior, y llegar a la racionalización, reflexión y análisis de los conocimientos, para que pueda orientar sus saberes a los problemas reales de los entornos del turismo, planteando soluciones, a través métodos prácticos; la adaptación de acceso a la comunicación mediante el conectivismo lo que permitirá estar en contacto con las nuevas tecnologías de la era digital que respondan a un proceso participativo y activo en donde los estudiantes son el principal actor de aprendizaje y potenciar así el conocimiento mediante la investigación continua, considerando que el conocimiento no es estático y único sino es continuo y permanente, lo que asegura un aprendizaje conectivo y globalizado; la generación de nuevas bases metodológicas, basados en la bio-conciencia para entender al sujeto como aprende a través del neuro-aprendizaje, apreciando sus factores neurológicos, biológicos y de los entornos que se presentan en el turismo, para potencializar sus capacidades individuales, fortaleciendo habilidades cognitivas, procedimentales y /o actitudinales; la formación de la conciencia turística cultural, a través de los saberes ancestrales culturales, de la población local, para desarrollar y potencializar sus hábitos y costumbres con una visión turística, por medio del estudio de la persona generando distintas formas de desarrollo; y la metodología problémica para que permita al estudiante utilizar estrategias de participación directa en la resolución de problemas y la obtención de resultados específicos, propios de los contextos del sector turístico.
+                                    </p>
+                                    <h3>PERFIL DE EGRESO</h3>
+                                    Analiza la realidad nacional en el contexto turístico y utiliza técnicas y tecnologías de la comunicación.
+                                    <br><br>Reconoce el antecedente histórico, la geografía ecuatoriana y latinoamericana como elementos importantes en el tema turístico.    
+                                    <br><br>Fundamenta principios de investigación enfocadas al turismo local y regional.
+                                    <br><br>Considera a la ética y el liderazgo como un eje transversal en toda actividad de desarrollo turístico.
+
+                                </section>
+                                </section>
+                            </div>
+                            <div id="mv1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>    
+                                <p> 
+                                    “Formar profesionales líderes competentes, con visión humanista y pensamiento crítico a través de la Docencia, la Investigación y la Vinculación, que apliquen, promuevan y difundan el conocimiento respondiendo a las necesidades del país.”    
+                                </p>    
+                                <h2>Visión</h2>
+                                <p>
+                                    “La Carrera de Turismo de la Universidad Técnica de Ambato, por sus niveles de excelencia se constituirá como un Centro de Formación Superior con liderazgo y proyección nacional e internacional.”    
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla1">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/malla_turismo.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="carrera2" class="popup">
+                    <button onclick="cerrarCarrera(2)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                        <h2>Carrera de Psicopedagogía</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio2" class="active"></a>
+                            <a href="#autoridades2">Autoridades</a>
+                            <a href="#info2">Información General</a>
+                            <a href="#mv2">Misión y Visión</a>
+                            <a href="#malla2">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido" >
+                            <div id="inicio2">
+                                <img src="../imagenes/inf_cienhum.png" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades2">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                <img src="../imagenes/Coordinador_Psicopedagogia.jpg" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Mg. Jorge Rodrigo Andrade Alban</p>
+                                <h3>Contacto: </h3>
+                                <p>jr.andrade@uta.edu.ec
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info2">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>8 Semestres</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Licenciado/a en Psicopedagogía.</p>
+
+                                    <h3>OBJETO DE ESTUDIO</h3>
+                                    <p>
+                                        La formación integral del psicopedagogo con dominios en la generación y aplicación del conocimiento disciplinar, profesional e investigativo y desarrollo de cualidades humanas y de buen vivir orientadas a potenciar el proceso de enseñanza aprendizaje y a la prevención, detección, diagnóstico, intervención y seguimiento de las necesidades educativas especiales en los distintos niveles educativos del sistema nacional de educación en el marco de la inclusión educativa, cambio de la matriz cognitiva, interculturalidad e innovación pedagógica social.
+                                    </p>    
+                                    </section>
+                                </section>
+                            </div>
+                            <div id="mv2">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>    
+                                <p>
+                                    Formar profesionales líderes competentes, con visión humanista y pensamiento crítico, a través de la Docencia, la Investigación e Innovación y la Vinculación con la Sociedad, que apliquen, promuevan y difundan el conocimiento respondiendo a las necesidades del país.     
+                                </p>
+                                <h2>Visión</h2>
+                                <p>
+                                    La Carrera de Psicopedagogía, por sus niveles de excelencia se constituirá como un centro de formación superior con liderazgo y proyección nacional e internacional.
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla2">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/malla_psicopedagogia.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Universidad Técnica de Ambato</p>
+    </footer>
+                `;
+                break;
+            case '6':
+                contenido = `
+                <header>
+        <section class="contenedor-header">
+            <img src="../imagenes/logo-fcs-2020.png" alt="" class="imagen-header">
+            <img src="../imagenes/logo uta.webp" alt="" class="imagen-header">
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+        </section>
+    </header>
+    <main>
+        <section class="contenedor-infra">
+            <section class="infraestructura6">
+                <section class="nombreFacultad">
+                    <h1>Facultad de <br>Ciencias de la Salud</h1>
+                </section>
+                <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+            </section>
+        </section>
+        <section>
+            <div class="contenedor">
+                <div class="cont-autrd">
+                    <section class="textoautr">
+                        <h2>Autoridades</h2>
+                        <h3> DECANO: </h3>
+                        <p>Dr. Jesús Onorato Chicaiza Tayupanta.</p>
+                        <h3> SUBDECANO: </h3>
+                        <p>Dra. Sandra Elizabeth Villacis Valencia.</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Misión y Visión</h2>
+                </section>
+                <img src="../imagenes/mv-salud_1.png" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Historia</h2>    
+                </section>
+                <img src="../imagenes/historia-salud.png" alt="" class="imagen-hist">
+            </div>
+        </section>
+            <div class="contenedor">
+                <section class="titulo"
+                    <h2>Carreras y Programas</h2>
+                </section>
+                <div id="overlay" class="overlay"></div>
+                <section class="galeria-carreras">
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                    <a class="open-popup-link" href="#" onclick="mostrarCarrera(1)"><h3>Enfermería</h3></a>    
+                        </section>
+                    </section>
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                        <a class=open-popup-link href="#" onclick="mostrarCarrera(2)"><h3>Medicina</h3></a>
+                        </section>
+                    </section>
+                </section>
+                <div id="carrera1" class="popup">
+                    <button onclick="cerrarCarrera(1)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                        <h2>Carrera de Enfermería</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio1" class="active"></a>
+                            <a href="#autoridades1">Autoridades</a>
+                            <a href="#info1">Información General</a>
+                            <a href="#mv1">Misión y Visión</a>
+                            <a href="#malla1">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido" >
+                            <div id="inicio1">
+                                <img src="../imagenes/inf_salud.jpg" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades1">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                <img src="../imagenes/coor_enf.jpg" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Lcdo. José Luis Herrera López Mg.</p>
+                                <h3>Contacto: </h3>
+                                <p>jl.herrera@uta.edu.ec
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>9 Semestres</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Licenciado en Enfermería</p>
+
+                                    <h3>PERFIL DE EGRESO</h3>
+                                    El egresado de la Carrera de Enfermería podrá:
+
+                                    <br><br>Coordina los procesos asistenciales y ejecuta intervenciones de enfermería y salud que fortalezcan la promoción, protección de la salud, la prevención de enfermedades y la recuperación de la salud, de manera participativa en un marco interdisciplinario y multisectorial. Ø Diseña y aplica protocolos de Enfermeria científicos y profesionales para mejorar la práctica profesional.
+
+                                    <br><br>Diseña el proceso de atención de enfermería de acuerdo a los ciclos de vida para dar respuestas a las necesidades reales y potenciales del individuo, grupo y comunidad, considerando la interdisciplinariedad e inter culturalidad, el perfil epidemiológico nacional y normativas del sistema nacional de salud.
+
+                                    <br><br>Vincular conocimientos teóricos, metodológicos y disciplinares relacionados con las áreas biomédica, humanística y social, al desempeñar el rol de proveedor de cuidados, educador, investigador y administrador, en beneficio de la calidad del cuidado a la salud de la población.
+
+                                    <br><br>Participar en el equipo multidisciplinario con intervenciones de enfermería sustentadas en el conocimiento de modelos, teorías, técnicas y procedimientos, para atender necesidades de la persona, a través de la sistematización del cuidado y mediante la aplicación del Proceso de Enfermería como herramienta metodológica.
+
+                                    <br><br>Desarrollar el ejercicio independiente de enfermería como expresión de la autogestión disciplinar, creando nichos laborales alternativos y un espacio de prácticas profesionales innovadoras.
+
+                                    <br><br>Asesorar y administrar programas de investigación científica, docencia y difusión de enfermería y plantear alternativas de formación, actualización y capacitación de recursos humanos en mejora de la calidad del servicio.
+                                </section>
+                                </section>
+                            </div>
+                            <div id="mv1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>    
+                                <p> 
+                                    Formar profesionales líderes competentes en Enfermería, con visión humanista y pensamiento crítico a través de la Docencia, la Investigación y la Vinculación, que apliquen, promuevan y difundan el conocimiento respondiendo a las necesidades del país.    
+                                </p>    
+                                <h2>Visión</h2>
+                                <p>
+                                    La Carrera de Enfermería por sus niveles de excelencia se constituirá en una unidad académica de formación superior con liderazgo y proyección nacional e internacional.    
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla1">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/mallaenfermeria.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="carrera2" class="popup">
+                    <button onclick="cerrarCarrera(2)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                        <h2>Carrera de Medicina</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio2" class="active"></a>
+                            <a href="#autoridades2">Autoridades</a>
+                            <a href="#info2">Información General</a>
+                            <a href="#mv2">Misión y Visión</a>
+                            <a href="#malla2">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido" >
+                            <div id="inicio2">
+                                <img src="../imagenes/inf_salud.jpg" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades2">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                <img src="../imagenes/coor_medicina.png" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Dr. Esp. Ricardo Recalde.</p>
+                                <h3>Contacto: </h3>
+                                <p>rj.recalde@uta.edu.ec
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info2">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>12 Semestres</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Médico o Médica</p>
+
+                                    <h3>INTRODUCCIÓN</h3>
+                                    <p>
+                                        La Universidad Técnica de Ambato en aras de satisfacer las necesidades de estudio de los jóvenes de la región y de atender las demandas de profesionales de las diferentes ramas de las Ciencias Médicas, crea la Carrera de Medicina el 27 de agosto de 2003, mediante aprobación del Honorable Consejo Universitario. Desde entonces se han efectuado cambios al diseño de la carrera para su perfeccionamiento constante, de acuerdo a las necesidades y exigencias del momento, las nuevas tendencias de la enseñanza de la Medicina en el ámbito internacional, los cambios en el perfil demográfico, en el cuadro epidemiológico del país, así como, las políticas de reformas en salud adoptadas por el Estado Ecuatoriano. El diseño curricular de la carrera de Medicina, contribuye a perfeccionar el desarrollo del proceso enseñanza aprendizaje y responde a las demandas actuales de salud de la población ecuatoriana. La programación de la estructura curricular está basada en los nuevos paradigmas pedagógicos dirigidos a la obtención de un médico capacitado para la atención integral del individuo, la familia y la comunidad, útil a la realidad nacional contemporánea, en el contexto de la construcción de una nueva universidad. Adquiere competencias, habilidades, destrezas y capacidades para la promoción de salud, prevención de enfermedades, diagnóstico, tratamiento, pronóstico y rehabilitación, con énfasis en la Atención Primaria. Las directrices del trabajo pedagógico están sustentadas en un enfoque con características de participativo, humanista, integral, social, critico, constructivista, flexible y transformador. Nuestro proyecto de carrera por competencias, está orientado a fortalecer el desarrollo de los conocimientos académicos teóricos y prácticos, la investigación, la gestión y la vinculación con la sociedad. Este modelo formativo del médico, experimenta transformaciones renovadoras, para garantizar que el graduado esté preparado para enfrentar los retos que la sociedad plantea.
+                                    </p>    
+                                    <h3>PERFIL DE EGRESO</h3>
+                                    <p>
+                                        El médico es un profesional con un conjunto de rasgos que lo caracterizan legalmente para profesar y ejercer la medicina, es una persona con educación universitaria superior que tiene como campo de acción el ser humano.
+
+                                        <br><br>La función del médico es la de promover salud, prevenir, diagnosticar, pronosticar, tratar y curar enfermedades y en el caso de que quede alguna secuela o discapacidad favorecer la rehabilitación integral del enfermo.
+
+                                        <br><br>El estudiante al término de la Carrera de Medicina tendrá excelencia científica, humanística, ética y responsabilidad social, poseerá competencias múltiples para el diagnóstico, tratamiento, pronóstico, la promoción de salud, la prevención y rehabilitación de enfermedades en las áreas de pediatría, medicina interna, ginecobstetricia, cirugía y medicina comunitaria.
+
+                                        <br><br>La formación universitaria desarrollará un médico con conocimientos, habilidades y destrezas para ejercer la práctica médica con calidad y centrada en el paciente en cualquier nivel de atención.
+
+                                        <br><br>El graduado de la carrera de medicina será competente, efectivo y eficiente para tomar las mejores decisiones y aplicará sus conocimientos en el diagnóstico, manejo terapéutico, pronóstico y prevención de los principales problemas de salud que afectan a la población ecuatoriana en el niño, la embarazada, el adulto, el paciente geriátrico y el quirúrgico de acuerdo a su nivel de competencia.    
+                                    </p>    
+                                    </section>
+                                </section>
+                            </div>
+                            <div id="mv2">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>    
+                                <p>
+                                    Formar médicos de excelencia científica, humanística, ética y responsabilidad social, dentro de la docencia, investigación y vinculación con la comunidad.    
+                                </p>
+                                <h2>Visión</h2>
+                                <p>
+                                    La Carrera de Medicina se constituirá en referente nacional e internacional por sus niveles de excelencia, ética y liderazgo en la formación superior de salud.    
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla2">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/malla_medicina.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Universidad Técnica de Ambato</p>
+    </footer>
+                `;
+                break;
+            case '7':
+                contenido = `
+                <header>
+        <section class="contenedor-header">
+            <img src="../imagenes/logo-ficm-2020.png" alt="" class="imagen-header">
+            <img src="../imagenes/logo uta.webp" alt="" class="imagen-header">
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+        </section>
+    </header>
+    <main>
+        <section class="contenedor-infra">
+            <section class="infraestructura7">
+                <section class="nombreFacultad">
+                    <h1>Facultad de <br>Ingeniería Civil Mecánica</h1>
+                </section>
+                <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+            </section>
+        </section>
+        <section>
+            <div class="contenedor">
+                <div class="cont-autrd">
+                    <section class="textoautr">
+                        <h2>Autoridades</h2>
+                        <h3> DECANO: </h3>
+                        <p>Ing. M.Sc. W. Santiago Medina R.</p>
+                        <h3> SUBDECANO: </h3>
+                        <p>Ing. M.Sc. Segundo M. Espín L.</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Misión y Visión</h2>
+                </section>
+                <img src="../imagenes/mision-vision-civil.png" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Historia</h2>    
+                </section>
+                <img src="../imagenes/historia-civil.png" alt="" class="imagen-hist">
+            </div>
+        </section>
+            <div class="contenedor">
+                <section class="titulo"
+                    <h2>Carreras y Programas</h2>
+                </section>
+                <div id="overlay" class="overlay"></div>
+                <section class="galeria-carreras">
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                    <a class="open-popup-link" href="#" onclick="mostrarCarrera(1)"><h3>Ingeniería Civil</h3></a>    
+                        </section>
+                    </section>
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                        <a class=open-popup-link href="#" onclick="mostrarCarrera(2)"><h3>Ingeniería Mecánica</h3></a>
+                        </section>
+                    </section>
+                </section>
+                <div id="carrera1" class="popup">
+                    <button onclick="cerrarCarrera(1)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                        <h2>Carrera de Ingeniería Civil</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio1" class="active"></a>
+                            <a href="#autoridades1">Autoridades</a>
+                            <a href="#info1">Información General</a>
+                            <a href="#mv1">Misión y Visión</a>
+                            <a href="#malla1">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido" >
+                            <div id="inicio1">
+                                <img src="../imagenes/inf_civil.jpg" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades1">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                <img src="../imagenes/coorcivil.jpeg" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Ing. Rodrigo Acosta L. MSc.</p>
+                                <h3>Contacto: </h3>
+                                <p>ri.acosta@uta.edu.ec<br>
+                                    032841144
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>9 Semestres</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Ingeniero Civil</p>
+
+                                    <h3>PERFIL DE EGRESO</h3>
+                                    Crear, diseñar y calcular sistemas estructurales seguros, económicos y durables; construir y dirigir las obras civiles y las edificaciones que el país requiere para el desarrollo y bienestar de la comunidad con respeto al medio ambiente.
+
+                                    <br><br>Desarrollar y gestionar la integración de las regiones a través de vías de comunicación terrestre, aérea o marítima, así como hacer competitiva la movilización de personas o productos con respeto al medio ambiente.
+
+                                    <br><br>Diseñar obras hidráulicas de calidad, técnica y respetando al medio ambiente, que garanticen la salud de las regiones y el bienestar de las comunidades.
+
+                                    <br><br>Valorar el uso eficiente de los recursos económicos y financieros incluidas las alternativas tecnológicas y los impactos sobre el entorno; relacionar las variables que permiten prospectar escenarios y hacer factibles las obras civiles.    
+                                </section>
+                                </section>
+                            </div>
+                            <div id="mv1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>    
+                                <p> 
+                                    Promover la generación de proyectos y propuestas de ingeniería como soporte para el desarrollo provincial, regional y nacional. Realizadas en un “ámbito de libertad, respeto a los derechos humanos e intelectuales, participación integrativa, equidad de género y defensa del medio ambiente, con criterios de sustentabilidad y sostenibilidad”.    
+                                </p>    
+                                <h2>Visión</h2>
+                                <p>
+                                    "Satisfacer demandas científico – técnicas de la sociedad ecuatoriana en interacción dinámica con sus actores, formando profesionales competentes que lideren investigación científica y tecnológica para proponer alternativas de solución a los problemas de ingeniería del país con pensamiento crítico, reflexivo, creativo y con conciencia social, para contribuir al mejoramiento de la calidad de vida de los ecuatorianos e impulsar el desarrollo sustentable del país.”    
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla1">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/mallaCivil.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="carrera2" class="popup">
+                    <button onclick="cerrarCarrera(2)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                        <h2>Carrera de Ingeniería Mecánica</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio2" class="active"></a>
+                            <a href="#autoridades2">Autoridades</a>
+                            <a href="#info2">Información General</a>
+                            <a href="#mv2">Misión y Visión</a>
+                            <a href="#malla2">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido" >
+                            <div id="inicio2">
+                                <img src="../imagenes/inf_civil.jpg" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades2">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                <img src="../imagenes/coormeca.jpeg" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Ing. Christian Castro Mg.</p>
+                                <h3>Contacto: </h3>
+                                <p>cb.castro@uta.edu.ec<br>
+                                    032841144
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info2">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>9 Semestres</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Ingeniero/a Mecánico/a</p>
+  
+                                    <h3>PERFIL DE EGRESO</h3>
+                                    <p>
+                                        Aplica metodología para la conversión y transmisión de energía térmica, mecánica y eléctrica, aprovechando de forma eficiente y sostenible los recursos energéticos en los sectores productivos de la región y del país.
+
+                                        <br><br>Aplica metodología para el Diseño, Fabricación y Selección de máquinas y equipos optimizando los recursos técnicos, materiales, económicos e incorporando nuevas tecnologías y conocimiento en los sectores productivos de la región y del país.
+
+                                        <br><br>Gestiona procesos de fabricación optimizando los recursos técnicos, materiales, económicos e incorporando conocimiento y nuevas tecnologías mediante la automatización, en los sectores productivos de la región y del país.
+
+                                        <br><br>Investiga, desarrolla e innova sistemas de producción industrial en las áreas de Energía, Materiales y Diseño Mecánico, optimizando los recursos técnicos, materiales y económicos para los sectores productivos de la región y del país.
+                                    </p>    
+                                    </section>
+                                </section>
+                            </div>
+                            <div id="mv2">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>    
+                                <p>
+                                    "Formar profesionales capaces de aportar en el desarrollo e innovación de productos y procesos técnicos y tecnológicos en el campo de la Ingeniería Mecánica al servicio de la comunidad con ética, conciencia social y medioambiental."    
+                                </p>
+                                <h2>Visión</h2>
+                                <p>
+                                    "Liderar la formación de Ingenieros Mecánicos competitivos con profesionales reconocidos por sus conocimientos, habilidades y valores como los mejores del Ecuador.”    
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla2">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/malla_curricular_mecanica.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Universidad Técnica de Ambato</p>
+    </footer>
+                `;
+                break;
+            case '8':
+                contenido = `
+                <header>
+        <section class="contenedor-header">
+            <img src="../imagenes/logo-sitio-fisei-2020.png" alt="" class="imagen-header">
+            <img src="../imagenes/logo uta.webp" alt="" class="imagen-header">
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+        </section>
+    </header>
+    <main>
+        <section class="contenedor-infra">
+            <section class="infraestructura8">
+                <section class="nombreFacultad">
+                    <h1>Facultad de <br>Ingeniería en Sistemas, Electrónica e Industrial</h1>
+                </section>
+                <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+            </section>
+        </section>
+        <section>
+            <div class="contenedor">
+                <div class="cont-autrd">
+                    <section class="textoautr">
+                        <h2>Autoridades</h2>
+                        <h3> DECANA: </h3>
+                        <p>Ing. Mg. Pilar Urrutia</p>
+                        <h3> SUBDECANO: </h3>
+                        <p>Ing. Mg. Carlos Sánchez</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Misión y Visión</h2>
+                </section>
+                <img src="../imagenes/mv-sistemas.png" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Historia</h2>    
+                </section>
+                <img src="../imagenes/historia-sistemas.png" alt="" class="imagen-hist">
+            </div>
+        </section>
+            <div class="contenedor">
+                <section class="titulo"
+                    <h2>Carreras y Programas</h2>
+                </section>
+                <div id="overlay" class="overlay"></div>
+                <section class="galeria-carreras">
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                    <a class="open-popup-link" href="#" onclick="mostrarCarrera(1)"><h3>Software</h3></a>    
+                        </section>
+                    </section>
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                        <a class=open-popup-link href="#" onclick="mostrarCarrera(2)"><h3>Tecnologías de la Información</h3></a>
+                        </section>
+                    </section>
+                </section>
+                <div id="carrera1" class="popup">
+                    <button onclick="cerrarCarrera(1)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                        <h2>Carrera de Software</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio1" class="active"></a>
+                            <a href="#autoridades1">Autoridades</a>
+                            <a href="#info1">Información General</a>
+                            <a href="#mv1">Misión y Visión</a>
+                            <a href="#malla1">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido" >
+                            <div id="inicio1">
+                                <img src="../imagenes/inf_fisei.png" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades1">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                <img src="../imagenes/coorsoft.jpg" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Ing. Mg. Clay Aldás Flores</p>
+                                <h3>Contacto: </h3>
+                                <p>clayaldas@uta.edu.ec<br>
+                                    032851894 ext 6
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>9 Semestres</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Ingeniero en Software</p>
+
+                                    <h3>PERFIL PROFESIONAL</h3>
+                                    El perfil profesional del Ingeniero en Tecnologías de la Información debe demostrar actitudes, destrezas que le permitan desarrollar actividades en su área profesional, adaptarse a nuevas situaciones, transferir sus conocimientos, habilidades y actitudes a áreas profesionales próximas que garantizan su desempeño en el campo laboral...    
+                                </section>
+                                </section>
+                            </div>
+                            <div id="mv1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>    
+                                <p> 
+                                    Formar profesionales lideres competentes con visión humanista y pensamiento crítico a través de la Docencia, la Investigación y la Vinculación, que apliquen, promuevan y difundan el conocimiento respondiendo a las necesidades del país.    
+                                </p>    
+                                <h2>Visión</h2>
+                                <p>
+                                    La carrera de Software de la Facultad de Ingeniería en Sistemas, Electrónica e Industrial de la Unversidad Técnica de Ambato por sus niveles de excelencia constituirá como un centro de formación superior con liderazgo y proyección nacional e internacional.    
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla1">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/SOFTWARE.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="carrera2" class="popup">
+                    <button onclick="cerrarCarrera(2)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                        <h2>Carrera de Tecnologías de la Información</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio2" class="active"></a>
+                            <a href="#autoridades2">Autoridades</a>
+                            <a href="#info2">Información General</a>
+                            <a href="#mv2">Misión y Visión</a>
+                            <a href="#malla2">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido" >
+                            <div id="inicio2">
+                                <img src="../imagenes/inf_fisei.png" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades2">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                    <img src="../imagenes/coorsoft.jpg" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Ing. Mg. Clay Aldás Flores</p>
+                                <h3>Contacto: </h3>
+                                <p>clayaldas@uta.edu.ec<br>
+                                    032851894 ext 6
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info2">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>9 Semestres</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Ingeniero/a en Tecnologías de la Información</p>
+  
+                                    <h3>PERFIL PROFESIONAL</h3>
+                                    <p>
+                                        El perfil profesional del Ingeniero en Tecnologías de la Información debe demostrar actitudes, destrezas que le permitan desarrollar actividades en su área profesional, adaptarse a nuevas situaciones, transferir sus conocimientos, habilidades y actitudes a áreas profesionales próximas que garantizan su desempeño en el campo laboral    
+                                    </p>    
+                                    </section>
+                                </section>
+                            </div>
+                            <div id="mv2">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>    
+                                <p>
+                                    Formar profesionales lideres competentes con visión humanista y pensamiento crítico a través de la Docencia, la Investigación y la Vinculación, que apliquen, promuevan y difundan el conocimiento respondiendo a las necesidades del país.    
+                                </p>
+                                <h2>Visión</h2>
+                                <p>
+                                    La carrera de Tecnologías de la Información de la Facultad de Ingeniería en Sistemas, Electrónica e Industrial de la Unversidad Técnica de Ambato por sus niveles de excelencia constituirá como un centro de formación superior con liderazgo y proyección nacional e internacional.    
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla2">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/TECNOLOGAS.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Universidad Técnica de Ambato</p>
+    </footer>
+                `;
+                break;
+            case '9':
+                contenido = `
+                <header>
+        <section class="contenedor-header">
+            <img src="../imagenes/logos-fdaa-ok1.png" alt="" class="imagen-header">
+            <img src="../imagenes/logo uta.webp" alt="" class="imagen-header">
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+        </section>
+    </header>
+    <main>
+        <section class="contenedor-infra">
+            <section class="infraestructura9">
+                <section class="nombreFacultad">
+                    <h1>Facultad de <br>Diseño y Arquitectua</h1>
+                </section>
+                <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(247, 249, 251);"></path></svg></div>
+            </section>
+        </section>
+        <section>
+            <div class="contenedor">
+                <div class="cont-autrd">
+                    <section class="textoautr">
+                        <h2>Autoridades</h2>
+                        <h3> DECANO: </h3>
+                        <p>Ing.Mg. Diego Cabrera</p>
+                        <h3> SUBDECANO: </h3>
+                        <p>Arq. Mg. Santiago Suárez Abril</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Misión y Visión</h2>
+                </section>
+                <img src="../imagenes/mision-vision.png" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <section class="titulo">
+                    <h2>Historia</h2>    
+                </section>
+                <section class="parrafos">
+                    <p>
+                        <br><br>Consejo Universitario en sesión ordinaria del martes 28 de enero de 1997, mediante Resolución 82-97-CU-P autoriza la creación de la Carrera de Artes Aplicadas en la Universidad Técnica de Ambato y dispone que funcione temporalmente adscrita a la Facultad de Ingeniería Civil.
+                        
+                        <br><br>En octubre de 2009, bajo la RESOLUCIÓN-1234-CU-P-2009, aprobada por el H. Consejo Universitario, expresa textualmente lo siguiente: 
+                        
+                        <br><br>Que la carrera de Artes Aplicadas ha dado cumplimiento a lo dispuesto en el numeral 1 del Acuerdo CAU-P-620-2009, en lo que hace relación con la reforma al Rediseño Curricular, el mismo que es aprobado por el H. Consejo Universitario mediante Resolución 1189-CU-P-09 de septiembre 29 del 2009, tomando como referencia el Acuerdo CAU-P-654-09 de septiembre 23 del 2009.
+                        <br><br>Que tomando como base el numeral 2, del Acuerdo CAU-P-620_2009 de septiembre 21 del 2009, se elabora el Proyecto de Creación de la Facultad de Diseño, Arquitectura y Artes y conforme lo establece el literal h) del Art. 17 del Estatuto Universitario, solicitando se autorice la Creación de la Facultad de Diseño, Arquitectura y Artes.
+                        <br><br>El 17 de mayo de 2010, el Consejo Nacional de Educación Superior (CONESUP), con oficio No. 002341, aprueba la denominación de las carreras y títulos de la facultad de Diseño, Arquitectura y Artes, siendo los siguientes:
+                        
+                        <br><br>Diseño Gráfico Publicitario
+                        <br><br>Diseño de Espacios Arquitectónicos
+                        <br><br>Diseño de Modas
+                    </p>
+                </section>
+            </div>
+        </section>
+            <div class="contenedor">
+                <section class="titulo"
+                    <h2>Carreras y Programas</h2>
+                </section>
+                <div id="overlay" class="overlay"></div>
+                <section class="galeria-carreras">
+                    <section class="contenedor-carreras">
+                        <section class="nombreCarrera">
+                    <a class="open-popup-link" href="#" onclick="mostrarCarrera(1)"><h3>Arquitectura</h3></a>    
+                        </section>
+                    </section>
+                </section>
+                <div id="carrera1" class="popup">
+                    <button onclick="cerrarCarrera(1)">×</button>
+                    <div class="popup-content">
+                        <section class="titulo">
+                        <h2>Carrera de Arquitectura</h2>
+                        </section>
+                        <div id="menu">
+                            <a href="#inicio1" class="active"></a>
+                            <a href="#autoridades1">Autoridades</a>
+                            <a href="#info1">Información General</a>
+                            <a href="#mv1">Misión y Visión</a>
+                            <a href="#malla1">Malla Curricular</a>
+                        </div>
+                        <div id ="contenido" >
+                            <div id="inicio1">
+                                <img src="../imagenes/inf_dis.png" alt="" class="img-inicio">
+                            </div>
+                            <div id="autoridades1">
+                                <section class="popup-text">
+                                    <h2>COORDINADOR DE CARRERA</h2>
+                                </section>
+                                <section class="contenedor-autor">
+                                <section>
+                                <img src="../imagenes/coor_arq.png" alt="" class="popup-foto">
+                                </section>
+                                <section class="popup-text">
+                                <p>Lic. Juan A. Paredes Chicaiza Mg.</p>
+                                <h3>Contacto: </h3>
+                                <p>juan.paredes@uta.edu.ec<br>
+                                    (03)-2401494
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="info1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                    <h3>DURACIÓN</h3>
+
+                                    <p>9 Semestres</p>
+
+                                    <h3>TÍTULO QUE OTORGA</h3>
+
+                                    <p>Arquitecto/a</p>
+
+                                    <h3>PERFIL DE EGRESADO</h3>
+                                    Manejar principios fundamentales de diseño básico aplicados a la arquitectura, reconocerlos, analizarlo y representarlos gráficamente mediante herramientas técnicas bi y tri dimensionales.
+                                    <br><br>Conceptualizar bases teórico-científicas y representarlas en elementos arquitectónicos tridimensionales enmarcados en la realidad mundial y nacional.
+                                    <br><br>Manejar criterios científicos, teóricos e históricos para el diseño de volúmenes y espacios arquitectónicos considerando la materialidad de la propuesta.
+                                    <br><br>Proponer sistemas constructivos aplicando principios mecánicos en la proyección arquitectónica, considerando la repercusión leve en el contexto urbano.
+                                    <br><br>Proponer espacios arquitectónicos con elementos estructurales considerando la repercusión media en los sistemas urbanos.
+                                    <br><br>Proponer el crecimiento en zonas urbanas de alta significación basado en procesos constructivos, tecnológicos de automatización y legales, enfrentados con los espacios patrimoniales.
+                                    <br><br>Desarrollar soluciones arquitectónicas considerando sistemas urbanos y costos, que satisfagan los requerimientos ciudadanos, se adapten al entorno y se sujeten a las normas constructivas nacionales e internacionales en relación con la comunidad y sus problemas latentes.
+                                    <br><br>Organizar la problemática urbana arquitectónica en base a componentes territoriales y criterios paisajísticos, considerando el impacto socio económico.    
+                                </section>
+                                </section>
+                            </div>
+                            <div id="mv1">
+                                <section class="contenedor-txt">
+                                <section class="popup-text">
+                                <h2>Misión</h2>    
+                                <p> 
+                                    Formar profesionales líderes competentes, con visión humanista y pensamiento crítico a través de la Docencia, la Investigación y la Vinculación, que apliquen, promuevan y difundan el conocimiento de la Arquitectura, en respuesta a las necesidades del país.     
+                                </p>    
+                                <h2>Visión</h2>
+                                <p>
+                                    La Carrera de Arquitectura de la Facultad de Diseño y Arquitectura de la Universidad Técnica de Ambato por sus niveles de excelencia se constituirá en un centro de formación superior con liderazgo y proyección nacional e internacional.     
+                                </p>
+                                </section>
+                                </section>
+                            </div>
+                            <div id="malla1">
+                                <section class="popup-txt">
+                                    <iframe src="../assets/malla_arq.pdf" title="Visor de PDF"></iframe>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Universidad Técnica de Ambato</p>
+    </footer>
+    
+                `;
+                break;
+            default:
+                contenido = "Contenido predeterminado";
+                break;
+        }
+
+        document.getElementById('contenidoVariable').innerHTML = contenido;
+
+        function mostrarCarrera(option) {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('carrera'+option).style.display = 'block';
+        }
+        
+        function cerrarCarrera(option) {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('carrera'+option).style.display = 'none';
+        }
+        var enlacesMenu = document.querySelectorAll('#menu a');
+
+        enlacesMenu.forEach(function(enlace) {
+            enlace.addEventListener('click', function(event) {
+                event.preventDefault(); 
+
+                enlacesMenu.forEach(function(e) {
+                    e.classList.remove('active');
+                });
+
+                var seccionesContenido = document.querySelectorAll('#contenido div');
+                seccionesContenido.forEach(function(seccion) {
+                    seccion.classList.remove('active');
+                });
+
+                enlace.classList.add('active');
+                var idSeccion = enlace.getAttribute('href').substring(1);
+                document.getElementById(idSeccion).classList.add('active');
+            });
+        });
+        
+        enlacesMenu[0].click();
+    </script>
+</body>
+</html>
+
+

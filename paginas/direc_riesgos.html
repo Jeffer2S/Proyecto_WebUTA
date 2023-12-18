@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/paginas_direc.css" />
+</head>
+
+<body>
+    <section class="section-direc">
+        <section class="contenedor">
+            <section class="director">
+                <h2>Dra. Pamela Martínez Saltos</h2>
+                <h4>pc.martinez@uta.edu.ec</h4>
+                <h2>DIRECTORA</h2>
+            </section>
+
+            <!-- -------- mision ---------->
+            <section class="mision">
+                <h2 class="titulo-mision">MISION</h2>
+                <p>
+                    La Dirección de Gestión de Riesgos es la encargada de planificar,
+                    organizar, evaluar, controlar, diseñar y definir los lineamientos,
+                    criterios y parámetros que permitirán ejecutar acciones que
+                    garanticen espacios de estudio y trabajo seguros y saludables para
+                    toda la comunidad universitaria, así como la corresponsabilidad que
+                    le pudiere corresponder frente a terceros.
+                </p>
+            </section>
+
+            <section class="tabla">
+                <!-- Pestañas -->
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'tab1')">
+                        Horario Atencion
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab2')">
+                        Dirección
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab3')">
+                        Ubicación
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab4')">
+                        Teléfonos
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab5')">
+                        Correo eletrónicos
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab6')">
+                        Servicion
+                    </button>
+                </div>
+
+                <div id="tab1" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <h3>Campus Huachi</h3>
+                    <p>
+                        Horario de atención: De Lunes a Viernes 08:30 a 12:30 y de 14:30 a
+                        18:30
+                    </p>
+                    <h3>Campus Ingahurco</h3>
+                    <p>
+                        Horario de atención del personal técnico: Martes, Miércoles y
+                        Viernes de 08:30 a 12:30 y de 14:30 a 16:30
+                    </p>
+                    <h3>Horario de atención del personal técnico</h3>
+                    <p>
+                        Martes y Viernes de 08:30 a 12:30 Miércoles 08:30 a 12:30 de 14:30
+                        a 17:00
+                    </p>
+                </div>
+
+                <div id="tab2" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>Av. Los Chásquis y Rio Payamino</p>
+                    <p>Av. Colombia y Chile</p>
+                    <p>Cantón Cevallos - Sector Querochaca - vía principal</p>
+                </div>
+
+                <div id="tab3" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>
+                        Edificio de la Facultad de Contabilidad y Auditoría, primer piso -
+                        Campus Huachi
+                    </p>
+                    <p>
+                        Edificio Sigma planta baja - junto al consultorio psicológico de
+                        la Carrera dePsicología Clínica - FCS
+                    </p>
+                    <p>
+                        Edificio de los Laboratorios de la Facultad de Ciencias de la
+                        Salud - Plata Baja - Área Administrativa
+                    </p>
+                </div>
+
+                <div id="tab4" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>03-2415288</p>
+                </div>
+
+                <div id="tab5" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>gestionderiesgos@uta.edu.ec</p>
+                </div>
+
+                <div id="tab6" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>
+                        * Seguridad y Salud en el Trabajo en la cual se realizan análisis
+                        técnicos como: niveles de riesgo, mediciones, evaluación, control
+                        y seguimiento de medidas correctivas, para establecer puestos de
+                        trabajo seguros y saludables, a fin de dar cumplimiento a la
+                        normativa vigente de riesgos laborales.
+                    </p>
+                    <p>
+                        * Emergencias y Desastres en la cual se establecen acciones ante
+                        eventos emergentes de forma homologada y estructurada.
+                    </p>
+                    <p>
+                        * Gestión Ambiental en la cual se ejecuta el plan de manejo de
+                        desechos peligrosos que generan los diferentes laboratorios de la
+                        Institución.
+                    </p>
+                </div>
+            </section>
+        </section>
+        <script>
+            "use strict";
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                        " active",
+                        ""
+                    );
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Mostrar la pestaña 1 por defecto
+            document.getElementById("tab1").style.display = "block";
+            document.getElementsByClassName("tablinks")[0].className += " active";
+        </script>
+    </section>
+</body>
+
+</html>

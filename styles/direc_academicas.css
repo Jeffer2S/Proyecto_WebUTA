@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600&family=Open+Sans:ital,wght@0,500;0,600;1,400&display=swap');
+
+body {
+    background-image: url(../imagenes/logo\ uta.webp);
+    background-repeat: repeat;
+    background-size: 500px 300px;
+    background-color: rgb(51, 51, 51, 0.9);
+  }
+  
+  #menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 13%;
+    height: 100%;
+    background-color: #ec9898;
+    opacity: 0.8;
+    font-family: 'Inconsolata', monospace;
+font-family: 'Open Sans', sans-serif;
+  }
+  
+  .accordion {
+    margin: 0px;
+    padding-top: 10px;
+  }
+  
+  .accordion-item {
+    margin: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: .5s;
+  }
+  
+  .accordion-content > a {
+    display: flex;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 5px;
+    padding: 1px;
+    color: #000;
+    border-radius: 5px;
+    padding-left: 5px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: azure;
+    transition: .3s;
+  }
+  
+  .accordion-item:hover{
+    background-color: rgb(241, 91, 91)
+  }
+  
+  .accordion-content > a:hover {
+    background-color: rgba(207, 200, 200, 0.507);
+    margin: 10px;
+  }
+  
+  .accordion-header {
+    font-size: 17px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .accordion-content {
+    display: none;
+  }
+  
+  .accordion-item.active .accordion-content,
+  .accordion-item:hover .accordion-content {
+    display: block;
+    max-height: auto;
+  }
+  
+  #contenedor {
+    position: fixed;
+    display: flex;
+    right: 0%;
+    top: 0;
+    width: 86.9%;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  #contenedor::-webkit-scrollbar {
+    width: 7px; 
+  }
+  
+  #contenedor::-webkit-scrollbar-track {
+    background-color: #888; 
+  }
+  
+  #contenedor::-webkit-scrollbar-thumb {
+    background-color:  #f39d9d;
+  }
+  
+  #contenedor::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }

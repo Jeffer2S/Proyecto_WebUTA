@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/estilos_paginas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Investigación</title>
+</head>
+
+<body>
+    <!-- Menú de Navegación -->
+    <nav class="menu_investigacion">
+        
+        <ul>
+            <li class="logo_izq"><a href="../paginas/investigacion.html"><img
+                    src="../imagenes/logoInvestigacion.jpg" alt="LogoInvestigacion"></a></li>
+            <li><a href="#" onclick="mostrarInformacion('REDIUTA')">REDIUTA</a></li>
+            <li><a href="#" onclick="mostrarInformacion('DIRECCION DE INVESTIGACION')">DIRECCION DE INVESTIGACION</a></li>
+            <li>
+                <div class="portal_academico">INVESTIGACION
+                    <div class="menu_academico">
+                        <a href="#" onclick="mostrarInformacion('GRUPO')">Grupos de investigación</a>
+                        <a href="#" onclick="mostrarInformacion('LINEA')">Línea de investigación</a>
+                        <a href="#" onclick="mostrarInformacion('PROYECTO')">Proyectos de investigación</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="portal_academico">LABORATORIOS
+                    <div class="menu_academico">
+                        <a href="#" onclick="mostrarInformacion('LAB_SALUD')">Laboratorio Facultad de Ciencias de la Salud</a>
+                        <a href="#" onclick="mostrarInformacion('LAB_ALIMENTOS')">Laboratorio Facultad de Ciencia e Ingenieria en Alimentos</a>
+                        <a href="#" onclick="mostrarInformacion('LAB_AGRO')">Laboratorio Facultad de Ciencias Agropecuarias</a>
+                    </div>
+                </div>
+            </li>
+            <li class="logo_izq"><a href="../index.html"><img src="../imagenes/regreso.png"
+                alt="LogoUTA"></a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Contenido de la sección de investigación -->
+        <section id="investigacion" class="seccion">
+            <h2 id="subtitulo" style="text-align: center; display: none;">Información REDI UTA</h2>
+            <!-- Elemento embed para mostrar el primer PDF -->
+            <embed id="pdfViewer1" src="" type="application/pdf" width="100%" height="600px" style="display: none;">
+            <h2 id="subtituloMiembros" style="text-align: center; display: none;">Miembros de la Red</h2>
+            <!-- Elemento embed para mostrar el segundo PDF -->
+            <embed id="pdfViewer2" src="" type="application/pdf" width="100%" height="600px" style="display: none;">
+
+            <!-- Contenedor para la información de la dirección de investigación -->
+            <div id="contenedorSubtitulo" style="display: none;">
+                <h2 id="subtituloDireccion">DIRECTORA DE LA DIRECCIÓN DE INVESTIGACIÓN</h2>
+                <h3 id="titulo">PhD. Lorena Rivera</h3>
+            </div>
+
+            <div id="contenedorMision" style="display: none;">
+                <img src="../imagenes/direccionInvestigacion.jpeg" alt="Dirección de Investigación" />
+                <div>
+                    <h1></h1>
+                    <h2>Misión de la Dirección de Investigación</h2>
+                    <p>Planificar, organizar, dirigir, difundir y evaluar acciones, relacionadas con la investigación, para lo cual ejecuta procesos de coordinación y seguimiento del Sistema de Investigación; de registro y difusión de los resultados de los proyectos de investigación a nivel institucional conforme lo establece el Estatuto de la Universidad Técnica de Ambato vigente.</p>
+                    <h3>Información de Contacto:</h3>
+                    <p>Horario de Atención: Lunes a Viernes 08h00 a 13h00 y de 14h00 a 17h00</p>
+                    <p>Dirección: Av. Los Chasquis y Rio Payamino</p>
+                    <p>Correo Electrónico: pl.rivera@uta.edu.ec</p>
+                </div>
+            </div>
+
+            <h2 id="subtituloGrupos" style="text-align: center; display: none;">Grupos de investigación </h2>
+            <h2 id="subtituloInvestigacion" style="text-align: center; display: none;">Lineas de investigación </h2>
+            <h2 id="subtituloProyectos" style="text-align: center; display: none;">Proyectos de Investigación</h2>
+            <h2 id="subtituloLAB_SALUD" style="text-align: center; display: none;">Laboratorio Facultad de Ciencias de la Salud</h2>
+            <h2 id="subtituloLAB_ALIMENTOS" style="text-align: center; display: none;">Laboratorio Facultad de Ciencia e Ingenieria en Alimentos</h2>
+            <h2 id="subtituloLAB_AGRO" style="text-align: center; display: none;">Laboratorio Facultad de Ciencias Agropecuarias</h2>
+
+
+            <div id="mensajeBienvenida" >
+                
+                <div>
+                    <h1></h1>
+                    <h1></h1>
+                    <h1>Bienvenido a la sección de investigación de la Universidad Técnica de Ambato</h1>
+                    <h1></h1>
+                    <h1></h1>
+                </div>
+            </div>
+
+            <div id="contenedorLAB_SALUD" style="display: none; text-align: center;">
+                <h2>Laboratorio De Biología Celular y Molecular</h2>
+                <p><strong>Responsable del Laboratorio:</strong> Ing. Diana Carolina González Palacios</p>
+                
+                <div class="descripcion">
+                    <h3>Descripción del laboratorio:</h3>
+                    <p>En el laboratorio estudiamos procesos humanos fisiológicos y patológicos complejos a nivel celular y molecular, integrando conocimientos de inmunología, toxicología y genética. Además, estamos interesados en estudiar desde una perspectiva multidisciplinaria (microbiología molecular, biología sintética, ingeniería metabólica) microorganismos con potencial para bioproducción de moléculas de alto valor y para aplicaciones en biomedicina y biorremediación.</p>
+                </div>
+                
+                <div class="contacto">
+                    <h3>Contacto</h3>
+                    <p><strong>Correo:</strong> <a>dc.gonzalez@uta.edu.ec</a></p>
+                    <p><strong>Teléfono:</strong> (03)-2521134 ext. 5000</p>
+                </div>
+            </div>
+
+            <div id="contenedorLAB_ALIMENTOS" style="display: none; text-align: center;">
+              
+                <h3>Responsable del Laboratorio: PhD. Santiago Casado Rojo</h3>
+                <p><strong>Correo:</strong> <a>s.casado@uta.edu.ec</a></p>
+                <p><strong>Teléfono:</strong> (03)-2400989 ext. 5509 / 5516</p>
+            
+                <div class="descripcion">
+                    
+                    <h2>Laboratorio de Canje de Deuda-Procesamiento</h2>
+                    <h3>Descripción del laboratorio:</h3>
+                    <p>Lavado, desinfección, cortado, trituración, despultado y almacenamiento a vacío o bajo atmósferas modificadas de frutas y hortalizas, extracción de aceite de semillas oleaginosas, elaboración de productos cárnicos, estudios de ultracongelación individual rápida, secado por aire caliente, elaboración de mermeladas, pasteurización a vacío o en baño María de jugos de frutas, etc.</p>
+                </div>
+            
+                <div class="descripcion">
+                    <h2>Laboratorio de Canje de Deuda-Análisis Instrumental</h2>
+                    <h3>Descripción del laboratorio:</h3>
+                    <p>Análisis por cromatografía líquida, gaseosa y absorción atómica, determinación de fibra, extracto etéreo, estudios acelerados de vida útil de alimentos, determinación de índice de lípidos y determinación de la actividad de agua y propiedades térmicas mediante calorimetría diferencial de barrido, etc.</p>
+                </div>
+            
+                <div class="descripcion">
+                    <h2>Laboratorio UODIDE-ICIA</h2>
+                    <h3>Descripción del laboratorio:</h3>
+                    <p>Estudios de biología molecular y microbiología, análisis de textura y reometría (viscoelasticidad), extracción de sustancias (baño caliente a vacío, centrifugación), secado por aire caliente y mediante aspersión (spray drying), microencapsulación, floculación, desinfección mediante ozonización, optimización de crecimiento microbiano en biorreactor, metalización previa a fotografía electrónica de barrido, etc.</p>
+                </div>
+            </div>
+
+            <div id="contenedorLAB_AGRO"style="display: none; text-align: center;">
+                <h2>Laboratorio de Suelos y Termoquímica</h2>
+                <h3>Responsable del Laboratorio: Dra. Marcia Buenaño</h3>
+                <p><strong>Correo:</strong> <a>me.buenano@uta.edu.ec</a></p>
+                <p><strong>Teléfono:</strong> (03)-2746171 ext. 102</p>
+                <h3>Descripción del laboratorio:</h3>
+                <p>Este laboratorio cuenta con los siguientes equipos: micro Kjeldahl, extractor Soxlet de fibra y grasa, equipo de absorción atómica, un rota vapor, un cromatógrafo de gases, pHmetro, espectrofotómetro UV visible, centrifuga, valorador de cloro, balanza termogravimétrica, analizador elemental. Los servicios que ofrece son: análisis de fertilidad elemental de suelos, análisis de fertilidad completa, análisis foliar, análisis de abonos orgánicos, análisis bromatológicos, análisis químico de aguas.</p>
+            
+                <h2>Laboratorio de Biología Molecular</h2>
+                <h3>Responsable del Laboratorio: Dr. Carlos Vásquez</h3>
+                <p><strong>Correo:</strong> <a>ca.vasquez@uta.edu.ec</a></p>
+                <p><strong>Teléfono:</strong> 0983344363</p>
+                <h3>Descripción del laboratorio:</h3>
+                <p>Cuenta con un equipo termociclador, un transiluminador UV, PCR cuantitativo, microcentrífuga, cámara de electroforesis, un baño térmico, un vortex. Se realiza análisis de detección y cuantificación de genes de importancia agropecuaria y ambiental.</p>
+            
+                <h2>Laboratorio de Ruminología</h2>
+                <h3>Responsable del Laboratorio: Dr. Marcos Barros</h3>
+                <p><strong>Correo:</strong> <a>ma.barros@uta.edu.ec</a></p>
+                <p><strong>Teléfono:</strong> 0985123890</p>
+                <h3>Descripción del laboratorio:</h3>
+                <p>Cuenta con equipo para analizar fibra detergente neutra, equipo transductor de gases, una peletizadora, balanzas, una bomba al vacío. Realiza análisis de degradación, digestibilidad ruminal, análisis de materia orgánica, fibra de pastos y alimentos para animales.</p>
+            
+                <h2>Laboratorio de Microbiología</h2>
+                <h3>Responsable del Laboratorio: PhD. Michel Leiva</h3>
+                <p><strong>Correo:</strong> <a>m.leiva@uta.edu.ec</a></p>
+                <p><strong>Teléfono:</strong> 0999937691</p>
+                <h3>Descripción del laboratorio:</h3>
+                <p>Cuenta con una Cabina de bioseguridad 1 y 2, autoclaves, incubadoras bacteriológicas, balanzas analíticas, potenciómetro. Se realiza la detección y cuantificación de enterobacterias resistentes a antibióticos, y bacterias y hongos de importancia agrícola. Microorganismos fijadores de nitrógeno y solubilizadoras de P y análisis microbiológicos de aguas.</p>
+            </div>
+            
+
+            <div id="contenedorGrupos" style="display: none;">
+                <!-- Agrega los 10 cuadros de grupos aquí -->
+                <div class="grupo" id="grupo1">Jurisprudencia y Ciencias Sociales</div>
+                <div class="grupo" id="grupo2">Ciencias Humanas y de la Educación</div>
+                <div class="grupo" id="grupo3">Ingeniería Civil y Mecánica</div>
+                <div class="grupo" id="grupo4">Ingeniería en Sistemas, Electrónica e Industrial</div>
+                <div class="grupo" id="grupo5">Diseño y Arquitectura</div>
+                <div class="grupo" id="grupo6">Ciencias de la Salud</div>
+                <div class="grupo" id="grupo7">Ciencias Agropecuarias</div>
+                <div class="grupo" id="grupo8">Ciencia e Ingeniería en Alimentos y Biotecnología</div>
+                <div class="grupo" id="grupo9">Contabilidad y Auditoría</div>
+                <div class="grupo" id="grupo10">Ciencias Administrativas</div>
+                
+            </div>
+            <h1></h1>
+
+            <div id="contenedorLineaInvestigacion" style="display: none;">
+                <ul>
+                    <li><a href="#" id="opcion1" onclick="mostrarInformacionLinea('opcion1')">Dominio Fortalecimiento Social, Democrático y Educativo</a></li>
+                    <li><a href="#" id="opcion2" onclick="mostrarInformacionLinea('opcion2')">Dominio Optimización de los Sistemas Productivos, Diseño y Desarrollo Urbanístico</a></li>
+                    <li><a href="#" id="opcion3" onclick="mostrarInformacionLinea('opcion3')">Dominio Sistemas Alimentarios Nutrición y Salud Pública</a></li>
+                    <li><a href="#" id="opcion4" onclick="mostrarInformacionLinea('opcion4')">Dominio Desarrollo Económico, Productivo y Sostenible PYMES y MICROPYMES</a></li>
+                    <h1></h1>
+                </ul>
+                <div id="contenedorInformacionLinea" style="display: none;"></div>
+            </div>
+
+            <h1></h1>
+
+<!-- En el área de Proyectos de Investigación -->
+<div id="proyectosInvestigacion" style="display: none;">
+    
+
+    <!-- Opciones iniciales -->
+    <ul>
+        <li><a href="#" class="selected" onclick="toggleOpcionProyecto('opcion1')">Proyectos de Investigación en Ejecución</a></li>
+        <!-- Submenú para la Opción 1 -->
+        <div id="subsubmenuopcion1" class="subsubmenu" style="display: none;">
+            <ul>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion1', 'subopcion1.1')">Proyecto Investigación Facultad de Diseño y Arquitectura</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion1', 'subopcion1.2')">Proyecto Investigación Facultad de Ciencias Administrativas</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion1', 'subopcion1.3')">Proyecto Investigación Facultad de Ciencias Agropecuarias</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion1', 'subopcion1.4')">Proyecto Investigación Facultad de Contabilidad y Auditoría</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion1', 'subopcion1.5')">Proyecto Investigación Facultad de Ciencias Humanas y de la Educación</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion1', 'subopcion1.6')">Proyecto Investigación Facultad de Ciencia e Ingeniería en Alimentos</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion1', 'subopcion1.7')">Proyecto Investigación Facultad de Ciencias de la Salud</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion1', 'subopcion1.8')">Proyecto Investigación Facultad de Ingeniería Civil y Mecánica</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion1', 'subopcion1.9')">Proyecto Investigación Facultad de Ingeniería en Sistemas, Electrónica e Industrial</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion1', 'subopcion1.10')">Proyecto Investigación Facultad de Jurisprudencia y Ciencias Sociales</a></li>
+                <!-- Agrega más subopciones si es necesario -->
+            </ul>
+        </div>
+
+        <li><a href="#" onclick="toggleOpcionProyecto('opcion2')">Proyectos de Investigación Finalizados</a></li>
+        <!-- Submenú para la Opción 2 -->
+        <div id="subsubmenuopcion2" class="subsubmenu" style="display: none;">
+            <ul>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion2', 'subopcion2.1')">Proyectos de Investigación Finalizado Centro de Idiomas</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion2', 'subopcion2.2')">Proyectos de Investigación Finalizado Facultad de Contabilidad y Auditoría</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion2', 'subopcion2.3')">Proyectos de Investigación Finalizado Facultad de Ciencias Administrativas</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion2', 'subopcion2.4')">Proyectos de Investigación Finalizado Facultad de Ciencias Agropecuarias</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion2', 'subopcion2.5')">Proyectos de Investigación Finalizado Facultad de Ciencias Humanas y de la Educación</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion2', 'subopcion2.6')">Proyectos de Investigación Finalizado Facultad de Ciencia e Ingeniería en Alimentos y Bioquímica</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion2', 'subopcion2.7')">Proyectos de Investigación Finalizado Facultad de Ciencias de la Salud</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion2', 'subopcion2.8')">Proyectos de Investigación Finalizado Facultad de Diseño y Arquitectura</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion2', 'subopcion2.9')">Proyectos de Investigación Finalizado Facultad de Ingeniería Civil y Mecánica </a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion2', 'subopcion2.10')">Proyectos de Investigación Finalizado Facultad de Ingeniería en Sistemas, Electrónica e Industrial</a></li>
+                <li><a href="#" onclick="mostrarInformacionSubopcion('opcion2', 'subopcion2.11')">Proyectos de Investigación Finalizado Facultad de Jurisprudencia y Ciencias Sociales</a></li>
+                <!-- Agrega más subopciones si es necesario -->
+            </ul>
+        </div>
+
+        <!-- Agrega más opciones y submenús si es necesario -->
+
+    </ul>
+
+    <!-- Contenedor para mostrar detalles de la opción seleccionada -->
+    <div id="detallesOpcionProyecto" style="display: none;">
+        <!-- Aquí se mostrarán los detalles de la opción seleccionada -->
+    </div>
+</div>
+
+            <div id="informacion"></div>
+        </section>
+    </main>
+
+
+
+    <!-- Script para mostrar el mensaje de información y controlar el submenú -->
+    <script>
+        
+        const informacionGrupos = {
+    grupo1: '— Grupo de Investigación sobre Exclusiones Desigualdades (GISED) <br> — Políticas Públicas, Derecho y Desarrollo Humano <br> — Comunicación, Sociedad, Cultura y Tecnología <br> — Ciencias de Decisiones e Innovación (CDI)',
+    grupo2: '— Ciencias Humanas y de la Educación Research in Language and Education <br> — Promoción de la Calidad de Vida',
+    grupo3: '— GI3M - Grupo de Investigación e Innovación en Ingeniería Mecánica <br> — Gestión de Recursos Naturales e Infraestructura Sustentable (geReNIS)',
+    grupo4: '— REWA-RD RD (Renewable Energy and Web Architecture, Research and Development) <br> — Informática Aplicada <br> — GITED - Grupo de Investigación en Tecnología de la Información y Sistemas de Control de Energía, Desarrollo Sostenible y Gestión de Recursos Naturales, Diseño, Materiales y Producción. Salud Humana',
+    grupo5: '— Diseño para el Desarrollo, Innovación y Creatividad - GIDDIC',
+    grupo6: '— Biociencias <br> — NUTRIGENX (Investigación de Genética/genómica, Toxicología y Nutrición) <br> — Mashkanapi Alli-Kawsai - Investigación en Salud <br> — Grupo de Investigación Académica y Científica en Ciencias Biomédicas con Proyección Social | Kuskiyky Yachay Suntur',
+    grupo7: '— Interacciones Antrópodos Fitófagos - Plantas <br> — Resistencia Antimicrobiana e Identificación de la Contaminación Microbiana en el Sector Ambiental, Alimentario y Agropecuaria (UTA-RAM-One Health)',
+    grupo8: '— G+BioFood and Engineering <br> — Botánica y Etnobotánica <br> — LAPPA <br> — AndesBioactivos',
+    grupo9: '— Ciencias Económicas <br> — Ciencias Empresariales',
+    grupo10: '— Desarrollo Territorial, Empresa e Investigación - DeTEI <br> — Desarrollo Comercial del Mercado <br> — Desarrollo Financiero Empresarial'
+};
+
+    function mostrarInformacionGrupo(grupoId) {
+    const informacion = informacionGrupos[grupoId] || 'Información no disponible';
+    const informacionElement = document.getElementById('informacion');
+
+    // Aplica estilos al contenedor de información
+    informacionElement.innerHTML = informacion;
+    informacionElement.style.border = '1px solid #ccc';
+    informacionElement.style.padding = '15px';
+    informacionElement.style.margin = '10px 0';
+    informacionElement.style.backgroundColor = '#f8f8f8';
+    informacionElement.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
+    informacionElement.style.borderRadius = '5px';
+}
+
+function ocultarInformacionGrupo() {
+    const informacionElement = document.getElementById('informacion');
+    // Oculta la información en el elemento con id "informacion"
+    informacionElement.innerText = '';
+    informacionElement.style.border = 'none';
+    informacionElement.style.padding = '0';
+    informacionElement.style.margin = '0';
+    informacionElement.style.backgroundColor = 'transparent';
+    informacionElement.style.boxShadow = 'none';
+    informacionElement.style.borderRadius = '0';
+}
+
+
+function mostrarInformacionLinea(opcion) {
+    const informacionLinea = {
+        opcion1: '— EXCLUSIÓN E INTEGRACIÓN SOCIAL<br>— POLÍTICAS PÚBLICAS, DERECHO Y SOCIEDAD<br>— COMUNICACIÓN, SOCIEDAD, CULTURA Y TECNOLOGÍA<br>— COMPORTAMIENTO SOCIAL Y EDUCATIVO',
+        opcion2: '— CONSTRUCCIÓN, ESTRUCTURAS, VÍAS Y TRANSPORTE<br>— ENERGÍA, DESARROLLO SOSTENIBLE Y GESTIÓN DE RECURSOS NATURALES<br>— DISEÑO, MATERIALES Y PRODUCCIÓN<br>— TECNOLOGÍA DE LA INFORMACIÓN Y SISTEMAS DE CONTROL',
+        opcion3: '— SALUD HUMANA<br>— SEGURIDAD Y SOBERANÍA ALIMENTARIA<br>— PRODUCCIÓN AGROALIMENTARIA Y MEDIO AMBIENTE<br>— MICROBIOLOGÍA Y BIOTECNOLOGÍA',
+        opcion4: '— ECONOMÍA DEL DESARROLLO<br>— DESARROLLO EMPRESARIAL',
+    };
+
+    const facultades = {
+        opcion1: [
+            '— CIENCIAS HUMANAS Y DE LA EDUCACIÓN<br>',
+            '— JURISPRUDENCIA Y CIENCIAS SOCIALES<br>'
+        ],
+        opcion2: [
+            '— INGENIERÍA CIVIL Y MECÁNICA<br>',
+            '— INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL<br>',
+            '— DISEÑO Y ARQUITECTURA<br>'
+        ],
+        opcion3: [
+            '— CIENCIAS AGROPECUARIAS<br>',
+            '— CIENCIAS DE LA SALUD<br>',
+            '— CIENCIA E INGENIERÍA EN ALIMENTOS<br>'
+        ],
+        opcion4: [
+            '— CIENCIAS ADMINISTRATIVAS<br>',
+            '— CONTABILIDAD Y AUDITORÍA<br>'
+        ],
+    };
+
+    // Obtiene la información de la opción seleccionada
+    const informacion = informacionLinea[opcion] || 'Información no disponible';
+    const facultadesList = facultades[opcion] || [];
+
+    // Construye el contenido HTML
+    const contenidoHTML = `
+        <div style="display: flex;">
+            <div style="flex: 1; margin-right: 20px;">
+                <h2>LÍNEAS</h2>
+                <p>${informacion}</p>
+            </div>
+            <div style="flex: 1;">
+                <h2>FACULTADES</h2>
+                <ul>${facultadesList.join('')}</ul>
+            </div>
+        </div>
+    `;
+
+    // Muestra la información en el elemento con id "contenedorInformacionLinea"
+    const contenedorInformacionLinea = document.getElementById('contenedorInformacionLinea');
+    contenedorInformacionLinea.innerHTML = contenidoHTML;
+    contenedorInformacionLinea.style.display = 'block'; // Asegúrate de que el contenedor sea visible
+}
+
+
+
+
+
+        function mostrarInformacion(opcion) {
+            let informacion = '';
+
+            switch (opcion) {
+                case 'REDIUTA':
+                  
+                    // Actualiza el contenido del primer embed con el primer PDF
+                    document.getElementById('pdfViewer1').src = '../assets/rediuta.pdf';
+                    // Muestra el primer visor de PDF y su subtítulo
+                    document.getElementById('pdfViewer1').style.display = 'block';
+                    document.getElementById('subtitulo').style.display = 'block';
+                    // Actualiza el contenido del segundo embed con el segundo PDF
+                    document.getElementById('pdfViewer2').src = '../assets/miembros-red.pdf';
+                    // Muestra el segundo visor de PDF y su subtítulo
+                    document.getElementById('pdfViewer2').style.display = 'block';
+                    document.getElementById('subtituloMiembros').style.display = 'block';
+                    document.getElementById('subtituloDireccion').style.display = 'none';
+                    document.getElementById('titulo').style.display = 'none';
+                    document.getElementById('contenedorSubtitulo').style.display = 'none';
+                    document.getElementById('contenedorMision').style.display = 'none';
+                    document.getElementById('contenedorGrupos').style.display = 'none';
+                    document.getElementById('contenedorLineaInvestigacion').style.display='none';
+                    document.getElementById('subtituloGrupos').style.display='none';
+                    document.getElementById('subtituloInvestigacion').style.display='none';
+                    document.getElementById('subtituloProyectos').style.display='none';
+                    document.getElementById('proyectosInvestigacion').style.display = 'none';
+                    document.getElementById('subtituloLAB_AGRO').style.display = 'none';
+                    document.getElementById('subtituloLAB_ALIMENTOS').style.display = 'none';
+                    document.getElementById('subtituloLAB_SALUD').style.display = 'none';
+                    document.getElementById('mensajeBienvenida').style.display = 'none';
+                    document.getElementById('contenedorLAB_SALUD').style.display = 'none';
+                    document.getElementById('contenedorLAB_ALIMENTOS').style.display = 'none';
+                    document.getElementById('contenedorLAB_AGRO').style.display = 'none';
+                   
+
+                    break;
+
+                    case 'DIRECCION DE INVESTIGACION':
+                  
+                    // Solo actualiza el subtítulo sin cambiar el contenido del primer embed ni mostrar el segundo embed
+                    document.getElementById('contenedorSubtitulo').style.display = 'block';
+                    document.getElementById('contenedorMision').style.display = 'block';
+                    document.getElementById('subtituloDireccion').style.display = 'block';
+                    document.getElementById('titulo').style.display = 'block';
+                    // Oculta los visores de PDF y sus subtítulos
+                    document.getElementById('pdfViewer1').style.display = 'none';
+                    document.getElementById('pdfViewer2').style.display = 'none';
+                    document.getElementById('subtitulo').style.display = 'none';
+                    document.getElementById('subtituloMiembros').style.display = 'none';
+                    document.getElementById('contenedorGrupos').style.display = 'none';
+                    document.getElementById('contenedorLineaInvestigacion').style.display='none';
+                    document.getElementById('subtituloGrupos').style.display='none';
+                    document.getElementById('subtituloInvestigacion').style.display='none';
+                    document.getElementById('subtituloProyectos').style.display='none';
+                    document.getElementById('proyectosInvestigacion').style.display = 'none';
+                    document.getElementById('subtituloLAB_AGRO').style.display = 'none';
+                    document.getElementById('subtituloLAB_ALIMENTOS').style.display = 'none';
+                    document.getElementById('subtituloLAB_SALUD').style.display = 'none';
+                    document.getElementById('mensajeBienvenida').style.display = 'none';
+                    document.getElementById('contenedorLAB_SALUD').style.display = 'none';
+                    document.getElementById('contenedorLAB_ALIMENTOS').style.display = 'none';
+                    document.getElementById('contenedorLAB_AGRO').style.display = 'none';
+                    
+                    break;
+
+                    case 'GRUPO':
+                // Oculta otros contenidos y muestra los grupos
+                document.getElementById('subtituloGrupos').style.display='block';
+                document.getElementById('contenedorGrupos').style.display = 'flex';
+                document.getElementById('subtitulo').style.display = 'none';
+                document.getElementById('subtituloMiembros').style.display = 'none';
+                document.getElementById('contenedorSubtitulo').style.display = 'none';
+                document.getElementById('contenedorMision').style.display = 'none';
+                document.getElementById('contenedorLineaInvestigacion').style.display='none';
+                document.getElementById('subtituloInvestigacion').style.display='none';
+                document.getElementById('subtituloProyectos').style.display='none';
+                document.getElementById('proyectosInvestigacion').style.display = 'none';
+                document.getElementById('subtituloDireccion').style.display = 'none';
+                document.getElementById('pdfViewer1').style.display = 'none';
+                document.getElementById('pdfViewer2').style.display = 'none';
+                document.getElementById('subtituloLAB_AGRO').style.display = 'none';
+                document.getElementById('subtituloLAB_ALIMENTOS').style.display = 'none';
+                document.getElementById('subtituloLAB_SALUD').style.display = 'none';
+                document.getElementById('mensajeBienvenida').style.display = 'none';
+                document.getElementById('contenedorLAB_SALUD').style.display = 'none';
+                document.getElementById('contenedorLAB_ALIMENTOS').style.display = 'none';
+                document.getElementById('contenedorLAB_AGRO').style.display = 'none';
+
+                for (let i = 1; i <= 10; i++) {
+                    const grupoId = `grupo${i}`;
+                    const grupoElement = document.getElementById(grupoId);
+
+                    // Configura eventos de mouseover y mouseout para cada grupo
+                    grupoElement.addEventListener('mouseover', () => mostrarInformacionGrupo(grupoId));
+                    grupoElement.addEventListener('mouseout', ocultarInformacionGrupo);
+                }
+                
+                break;
+                case 'LINEA':
+                    // Muestra las opciones para Línea de investigación
+                    document.getElementById('subtituloInvestigacion').style.display='block';
+                    document.getElementById('contenedorLineaInvestigacion').style.display = 'block';
+                    // Oculta otros contenidos
+                    document.getElementById('pdfViewer1').style.display = 'none';
+                    document.getElementById('pdfViewer2').style.display = 'none';
+                    document.getElementById('subtitulo').style.display = 'none';
+                    document.getElementById('subtituloMiembros').style.display = 'none';
+                    document.getElementById('subtituloDireccion').style.display = 'none';
+                    document.getElementById('titulo').style.display = 'none';
+                    document.getElementById('contenedorSubtitulo').style.display = 'none';
+                    document.getElementById('contenedorMision').style.display = 'none';
+                    document.getElementById('contenedorGrupos').style.display = 'none';
+                    document.getElementById('subtituloGrupos').style.display='none';
+                    document.getElementById('subtituloProyectos').style.display='none';
+                    document.getElementById('proyectosInvestigacion').style.display = 'none';
+                    document.getElementById('subtituloLAB_AGRO').style.display = 'none';
+                    document.getElementById('subtituloLAB_ALIMENTOS').style.display = 'none';
+                    document.getElementById('subtituloLAB_SALUD').style.display = 'none';
+                    document.getElementById('mensajeBienvenida').style.display = 'none';
+                    document.getElementById('contenedorLAB_SALUD').style.display = 'none';
+                    document.getElementById('contenedorLAB_ALIMENTOS').style.display = 'none';
+                    document.getElementById('contenedorLAB_AGRO').style.display = 'none';
+                    break;
+
+                    case 'PROYECTO':
+                // Muestra las opciones para Proyectos de investigación
+                document.getElementById('subtituloProyectos').style.display='block';
+                document.getElementById('proyectosInvestigacion').style.display = 'block';
+                // Oculta otros contenidos
+                document.getElementById('pdfViewer1').style.display = 'none';
+                document.getElementById('pdfViewer2').style.display = 'none';
+                document.getElementById('subtitulo').style.display = 'none';
+                document.getElementById('subtituloMiembros').style.display = 'none';
+                document.getElementById('subtituloDireccion').style.display = 'none';
+                document.getElementById('titulo').style.display = 'none';
+                document.getElementById('contenedorSubtitulo').style.display = 'none';
+                document.getElementById('contenedorMision').style.display = 'none';
+                document.getElementById('contenedorGrupos').style.display = 'none';
+                document.getElementById('contenedorLineaInvestigacion').style.display = 'none';
+                document.getElementById('subtituloGrupos').style.display='none';
+                document.getElementById('subtituloInvestigacion').style.display='none';
+                document.getElementById('subtituloLAB_AGRO').style.display = 'none';
+                document.getElementById('subtituloLAB_ALIMENTOS').style.display = 'none';
+                document.getElementById('subtituloLAB_SALUD').style.display = 'none';
+                document.getElementById('mensajeBienvenida').style.display = 'none';
+                document.getElementById('contenedorLAB_SALUD').style.display = 'none';
+                document.getElementById('contenedorLAB_ALIMENTOS').style.display = 'none';
+                document.getElementById('contenedorLAB_AGRO').style.display = 'none';
+
+                break;
+
+                case 'LAB_SALUD':
+                document.getElementById('subtituloLAB_SALUD').style.display = 'block';
+                document.getElementById('contenedorLAB_SALUD').style.display = 'block';
+
+                    // Oculta otros contenidos
+                document.getElementById('pdfViewer1').style.display = 'none';
+                document.getElementById('pdfViewer2').style.display = 'none';
+                document.getElementById('subtitulo').style.display = 'none';
+                document.getElementById('subtituloMiembros').style.display = 'none';
+                document.getElementById('subtituloDireccion').style.display = 'none';
+                document.getElementById('titulo').style.display = 'none';
+                document.getElementById('contenedorSubtitulo').style.display = 'none';
+                document.getElementById('contenedorMision').style.display = 'none';
+                document.getElementById('contenedorGrupos').style.display = 'none';
+                document.getElementById('contenedorLineaInvestigacion').style.display='none';
+                document.getElementById('subtituloGrupos').style.display='none';
+                document.getElementById('subtituloInvestigacion').style.display='none';
+                document.getElementById('subtituloProyectos').style.display='none';
+                document.getElementById('proyectosInvestigacion').style.display = 'none';
+                document.getElementById('subtituloLAB_AGRO').style.display = 'none';
+                document.getElementById('subtituloLAB_ALIMENTOS').style.display = 'none';
+                document.getElementById('mensajeBienvenida').style.display = 'none';
+                document.getElementById('contenedorLAB_ALIMENTOS').style.display = 'none';
+                document.getElementById('contenedorLAB_AGRO').style.display = 'none';
+
+                    break;
+
+                case 'LAB_ALIMENTOS':
+                document.getElementById('subtituloLAB_ALIMENTOS').style.display = 'block';
+                document.getElementById('contenedorLAB_ALIMENTOS').style.display = 'block';
+                    // Oculta otros contenidos
+                document.getElementById('pdfViewer1').style.display = 'none';
+                document.getElementById('pdfViewer2').style.display = 'none';
+                document.getElementById('subtitulo').style.display = 'none';
+                document.getElementById('subtituloMiembros').style.display = 'none';
+                document.getElementById('subtituloDireccion').style.display = 'none';
+                document.getElementById('titulo').style.display = 'none';
+                document.getElementById('contenedorSubtitulo').style.display = 'none';
+                document.getElementById('contenedorMision').style.display = 'none';
+                document.getElementById('contenedorGrupos').style.display = 'none';
+                document.getElementById('contenedorLineaInvestigacion').style.display='none';
+                document.getElementById('subtituloGrupos').style.display='none';
+                document.getElementById('subtituloInvestigacion').style.display='none';
+                document.getElementById('subtituloProyectos').style.display='none';
+                document.getElementById('proyectosInvestigacion').style.display = 'none';
+                document.getElementById('subtituloLAB_AGRO').style.display = 'none';
+                document.getElementById('subtituloLAB_SALUD').style.display = 'none';
+                document.getElementById('mensajeBienvenida').style.display = 'none';
+                document.getElementById('contenedorLAB_SALUD').style.display = 'none';
+                document.getElementById('contenedorLAB_AGRO').style.display = 'none';
+
+                    
+                    break;
+
+                case 'LAB_AGRO':
+                document.getElementById('subtituloLAB_AGRO').style.display = 'block';
+                document.getElementById('contenedorLAB_AGRO').style.display = 'block';
+                    // Oculta otros contenidos
+                    document.getElementById('pdfViewer1').style.display = 'none';
+                    document.getElementById('pdfViewer2').style.display = 'none';
+                    document.getElementById('subtitulo').style.display = 'none';
+                    document.getElementById('subtituloMiembros').style.display = 'none';
+                    document.getElementById('subtituloDireccion').style.display = 'none';
+                    document.getElementById('titulo').style.display = 'none';
+                    document.getElementById('contenedorSubtitulo').style.display = 'none';
+                    document.getElementById('contenedorMision').style.display = 'none';
+                    document.getElementById('contenedorGrupos').style.display = 'none';
+                    document.getElementById('contenedorLineaInvestigacion').style.display='none';
+                    document.getElementById('subtituloGrupos').style.display='none';
+                    document.getElementById('subtituloInvestigacion').style.display='none';
+                    document.getElementById('subtituloProyectos').style.display='none';
+                    document.getElementById('proyectosInvestigacion').style.display = 'none';
+                    document.getElementById('subtituloLAB_ALIMENTOS').style.display = 'none';
+                    document.getElementById('subtituloLAB_SALUD').style.display = 'none';
+                    document.getElementById('mensajeBienvenida').style.display = 'none';
+                    document.getElementById('contenedorLAB_SALUD').style.display = 'none';
+                    document.getElementById('contenedorLAB_ALIMENTOS').style.display = 'none';
+
+                    break;
+
+                default:
+                    informacion = 'Explora nuestras actividades de investigación y proyectos.';
+                    document.getElementById('mensajeBienvenida').style.display = 'block';
+                    // Oculta ambos visores de PDF y sus subtítulos para otras opciones
+                    document.getElementById('pdfViewer1').style.display = 'none';
+                    document.getElementById('pdfViewer2').style.display = 'none';
+                    document.getElementById('subtitulo').style.display = 'none';
+                    document.getElementById('subtituloMiembros').style.display = 'none';
+                    document.getElementById('subtituloDireccion').style.display = 'none';
+                    document.getElementById('titulo').style.display = 'none';
+                    document.getElementById('contenedorSubtitulo').style.display = 'none';
+                    document.getElementById('contenedorMision').style.display = 'none';
+                    document.getElementById('contenedorGrupos').style.display = 'none';
+                    document.getElementById('contenedorLineaInvestigacion').style.display='none';
+                    document.getElementById('subtituloGrupos').style.display='none';
+                    document.getElementById('subtituloInvestigacion').style.display='none';
+                    document.getElementById('subtituloProyectos').style.display='none';
+                    document.getElementById('proyectosInvestigacion').style.display = 'none';
+                    document.getElementById('subtituloLAB_AGRO').style.display = 'none';
+                    document.getElementById('subtituloLAB_ALIMENTOS').style.display = 'none';
+                    document.getElementById('subtituloLAB_SALUD').style.display = 'none';
+                    document.getElementById('contenedorLAB_SALUD').style.display = 'none';
+                    document.getElementById('contenedorLAB_ALIMENTOS').style.display = 'none';
+                    document.getElementById('contenedorLAB_AGRO').style.display = 'none';
+                    
+
+                    break;
+            }
+
+            document.getElementById('informacion').innerText = informacion;
+        }
+
+    function toggleOpcionProyecto(opcion) {
+    const subsubmenu = document.getElementById(`subsubmenu${opcion}`);
+    const detallesOpcionProyecto = document.getElementById('detallesOpcionProyecto');
+
+    // Oculta todos los submenús
+    const submenues = document.getElementsByClassName('subsubmenu');
+    for (let i = 0; i < submenues.length; i++) {
+        submenues[i].style.display = 'none';
+    }
+
+    // Muestra el submenú correspondiente
+    subsubmenu.style.display = 'block';
+
+    // Obtén y muestra información de la subopción seleccionada
+    const informacionSubopcion = obtenerInformacionSubopcion(opcion); // Debes definir esta función
+    detallesOpcionProyecto.innerText = informacionSubopcion;
+    detallesOpcionProyecto.style.display = 'block'; // Asegúrate de que el contenedor sea visible
+}
+
+
+
+function mostrarInformacionSubopcion(opcion, subopcion) {
+    const detallesOpcionProyecto = document.getElementById('detallesOpcionProyecto');
+
+ // Define la información para cada subopción de la Opción 1
+const informacionSubopciones = {
+    'subopcion1.1': `
+        • PLAN ESTRATÉGICO DE MEJORA PARA EL PROCESO DE DISEÑO DE CALZADO DE LAS MIPYMES DE TUNGURAHUA
+        • DISEÑO Y PRODUCCIÓN DE PRENDAS EMERGENTES PARA AFRONTAR LA EMERGENCIA SANITARIA COVID19 DEL CONSUMIDOS POSPANDEMIA
+        • ESTRATEGIAS PARA LA REUTILIZACIÓN DE REMANENTES DEL CLÚSTER CUERO Y CALZADO DE TUNGURAHUA COMO CONTRIBUCIÓN A LA SUSTENTABILIDAD DEL SECTOR PRODUCTIVO
+    `,
+    'subopcion1.2': `
+        • RUTAS TURISTICAS: DESDE UNA PRESPECTIVA GEOREFERENCIAL RELACIONADO AL COMPORTAMIENTO DEL TURISTA
+        • EFICIENCIA ESTRATEGICA: DESDE UNA PERSPECTIVA DEL MACHINE LEARNING EN LA EDUCACION SUPERIOR
+        • MODELO DE TRANSCICIÓN DIGITAL PARA PYMES Y MICRO PYMES COMO FACTOR RESULTANTE DE LA PANDEMIA (COVID 19) EN LA ZONA 3 DEL ECUADOR
+    `,
+    'subopcion1.3': `
+        • SELECCIÓN DE AISLADOS DE TRICHODERMA SPP CON POTENCIAL BIOCONTROLADOR DEL AGUA AGENTE CAUSAL DE LA PUDRICIÓN BLANCA DE LA CEBOLLA
+        • ALIMENTACIÓN EN CUYES (Cavia porcellus) UTILIZANDO MÓDULOS DE AVENA VERDE DIFROPÓNICA (Arrenatherium elatius), COMO ALTERNATIVA EN LA PRODUCCIÓN EN ZONAR RURALES
+        • EVALUACIÓN DE LA CALIDAD MICROBIOLÓGICA DE LA CARNE DE POLLO QUE SE EXPENDE EN EL CANTÓN AMBATO
+    `,
+    'subopcion1.4': `
+        • POLITICA TRIBUTARIA Y EL CONSUMO DE BEBIDAS AZUCARADAS EN EL ECUADOR
+        • SEGURIDAD VIAL, POLITICAS PUBLICAS Y VICTIMOLOGIA EN LOS DISTRITOS 1, 2 Y 3 DE TUNGURAHUA
+        • VOLATILIDAD ASIMETRICA DE PRECIOS E INSTRUMENTO DE GESTIÓN DE RIEGO DE MERCADO PARA LOS PRODUCTORES DE PAPA EN EL ECUADOR
+    `,
+    'subopcion1.5': `
+        • TECNOLOGIA MOVIL, REALIDAD VIRTUAL Y VIDEO ANALISIS DEL MOVIMIENTO EN EL AMBITO DE LA ACTIVIDAD FISICA Y EL DEPORTE.
+        • PERFIL GENÉTICO COMO DETERMINANTE DE SALUD Y RIESGO METABÓLICO EN ESTUDIANTES UNIVERSITARIOS POSTERIOR A UN AISLAMIENTO DOMICILIARIO
+        • ESTIMULACION MUTISENSORIAL TEMPRANA BASADA EN LA METODOLOGÍA MONTESSORI PARA NIÑOS/AS DE 0-5 AÑOS CON O SIN NECESIDADES EDUCATIVAS ESPECIALES POST DISATANCIAMIENTO SOCIAL
+    `,
+    'subopcion1.6': `
+        • FERMENTACIÓN MICROBIANA A PARTIR DE RESIDUOS DE PAPA (SOLANUM TUBEROSUM) PARA LA OBTENCIÓN DE UN ALIMENTO ENRIQUECIDO EN PROTEINAS
+        • IMPACTO DEL CAMBIO CLIMATICO EN LA SEGURIDAD ALIMENTARIA DE LA PROVINCIA DE TUNGURAHUA
+        • ANALISIS DE LA INNOVACIÓN Y EL RENDIMIENTO FINANCIERO EN LOS DOS PRIMEROS ESLABONES DE LA CADENA PRODUCTIVA DE LA LECHE. ESTUDIO DE CASO EN COTOPAXI Y TUNGURAHUA
+    `,
+    'subopcion1.7': `
+        • MARCADORES GENÉTICOS ASOCIADOS A LA PREDISPOSICIÓN DEL ALCOHOLISMO EN LA PROVINCIA DE TUNGURAHUA
+        • ESTUDIO ETNOBOTÁNICO Y BIOENSAYOS DE PLANTAS MEDICINALES RELACIONADAS CON EL TRATAMIENTO DE CÁNCER DE CÉRVIX EN LA CIUDAD DE AMBATO, PROVINCIA DE TUNGURAHUA, ECUADOR.
+        • CARACTERIZACIÓN DE MARCADORES GENÉTICOS E INMUNOLÓGICOS CON VALOR DIAGNOSTICO, PRONOSTICO Y TERAPEUTICO EN CANCER DE MAMA Y CUELLO UTERINO
+    `,
+    'subopcion1.8': `
+        • ESTUDIO DE LAS PROPIEDADES FISICAS Y MORFOLOGICAS DE ALIMINOSILICATOS PARA REEMPLAZO PARCIAL DEL CEMENTO PORTLAND EN EL CONCRETO ESTRUCTURAL
+        • IDENTIFICACION Y CARACTERIZACION DE SUSTANCIAS REACTIVAS NATURALES Y SINTETICAS DE ORIGEN ECUATORIANO PARA EL DISEÑO DE UN FILTRO DESTINADO A LA DESCONTAMINACIÓN DE METALES PESADOS EN AGUAS RESIDUALES DE LA INDUSTRIA AUTOMOTRIZ DEL CANTON AMBATO
+        • ESTUDIO EXPERIMENTAL DEL COMPORTAMIENTO DE DIFERENTES TIPOLOGÍAS DE MÁQUINAS TRIATÉRMICAS PARA APROVECHAMIENTO DE FUENTES DE CALOR DE BAJA TEMPERATURA
+    `,
+    'subopcion1.9': `
+        • IMPLEMENTACION DE UNA PLATAFORMA CLOUD DE EVALUACION DEL RECURSO EOLICO EN TERRENO COMPLEJO Y PREDICCION DE ENERGIA, BASADO EN UN ENFOQUE HIBRIDO
+        • DESARROLLO DE UNA PLATAFORMA TECNOLOGICA EN LINEA PARA MEJORAR LA COMPETITIVIDAD EN EL SECTOR CALZADO DE LA PROVINCIA DE TUNGURAHUA
+        • DEFINICIÓN DE UN MODELO DE NEGOCIO PARA EL FORTALECIMIENTO DE INICIATIVAS DE COMERCIO ELECTRÓNICO EN TUNGURAHUA COMO ALTERNATIVA PARA ENFRENTAR LA CRISIS ECONÓMICA GENERADA POR LA PANDEMIA DEL COVID 19
+    `,
+    'subopcion1.10': `
+        • PROYECTO INTEGRADOR PARA MEJORAR LA CALIDAD DE VIDA DE LAS PERSONAS MAYORES EN LA LOCALIDAD DE TISALEO
+        • DESIGUALDADES EDUCATIVAS, REPRESENTACIONES Y EXPERIENCIAS DE LA EDUCACIÓN UNIVERSITARIA EN TIEMPOS DE COVID-19 Y POST-COVID-19
+        • EL COVID-19. DEL SENTIDO ORWELLIANO A LA NECROPOLÍTICA: LOS DISCURSOS MEDIÁTICOS DE LA PANDEMIA EN ECUADOR
+    `,
+    'subopcion2.1': `
+        • INTERFERENCIAS LINGUISTICAS CAUSADAS POR LAS LENGUAS MATERNAS KICHWA Y ESPAÑOL EN LAS DESTREZAS PRODUCTIVAS DEL IDIOMA INGLÉS
+        • LA APLICACIÓN DE MÉTODOS ESTANDARIZADOS, NO ESTANDARIZADOS Y TECNOLÓGICOS DE EVALUACIÓN DE IDIOMA EN RELACIÓN AL NIVEL DE ESTRÉS QUE ESTOS GENERAN EN ESTUDIANTES UNIVERSITARIOS
+    `,
+    'subopcion2.2': `
+        • ESTUDIO DE INDICADORES SOCIO-ECONÓMICOS DE LA REPÚBLICA DEL ECUADOR TRAS LAS POLÍTICAS DEL PRESIDENTE RAFAEL CORREA (2006-2013)
+        • LA RESPONSABILIDAD SOCIAL EMPRESARIAL Y LA IMAGEN CORPORATIVA EN LAS PYMES DE TUNGURAHUA
+        • EL IMPACTO DE LOS FACTORES RELACIONALES EN EL ÉXITO DE LAS ASOCIACIONES EMPRESARIALES DEL ECUADOR
+    `,
+    'subopcion2.3': `
+        • EL MICROCRÉDITO Y EL AUTOEMPLEO EN EL CANTÓN AMBATO, PROVINCIA DE TUNGURAHUA
+        • DETERMINANTES DEL EMPRENDIMIENTO TURÍSTICO EN LOS CANTONES DE LA PROVINCIA DE TUNGURAHUA
+        • IMPACTO DE LAS EMPRESAS FAMILIARES EN LA ECONOMÍA PROVINCIAL DE TUNGURAHUA
+    `,
+    'subopcion2.4': `
+        • ESTUDIO DE LA APLICACIÓN DE SHOCK ELÉCTRICO PARA EL MEJORAMIENTO DE LA CALIDAD DE LA CARCAZA DE CUY (CAVIA PORCELLUS)
+        • EVALUACIÓN A NIVEL DE LABORATORIO DE DIEZ EXTRACTOS PARA REDUCIR LA INCIDENCIA DE AGENTES CAUSALES DE ENFERMEDADES DE CULTIVOS HORTIFRUTÍCOLAS.
+        • UTILIZACIÓN DE BIOMAS (biol) ENRIQUECIDO CON MICROORGANISMOS EFICIENTES (EM) COMO ALTERNATIVA TECNOLÓGICA AL USO DE AGROQUÍMICOS EN LA PRODUCCIÓN DE FRUTAS Y HORTALIZAS
+    `,
+    'subopcion2.5': `
+        • "(DES) IGUALDAD DE GÉNERO EN EL ÁMBITO LABORAL DEL ECUADOR
+        • EL ENTRENAMIENTO DE LAS CARRERAS DE FONDO Y SU INCIDENCIA EN EL RENDIMIENTO DEPORTIVO DE LAS PERSONAS CON DISCAPACIDADES VISUALES DEL CANTÓN AMBATO, UNA FORMA DE INCLUSIÓN SOCIAL
+        • ESTUDIO DE LA EVOLUCIÓN MORFOMÉTRICA DEL PIE DE LOS NIÑOS ECUATORIANOS EN EDAD ESCOLAR Y SUS ADAPTACIONES TRAS LA REALIZACIÓN DE ACTIVIDAD FÍSICA
+    `,
+    'subopcion2.6': `
+        • CONSERVACIÓN DE FRUTAS NO CLIMATÉRICAS DE LA PROVINCIA DE TUNGURAHUA MEDIANTE TÉCNICAS DE MÍNIMO PROCESO PARA EL CONSUMO INTERNO Y DE EXPORTACIÓN
+        • MEJORAMIENTO DEL PROCESO DE FERMENTACIÓN DE CACAO (THEOBROMA CACAO I) VARIEDAD NACIONAL Y VARIEDAD CCN51
+        • PAPILLA PARA NIÑOS DE 6 A 36 MESES A BASE DE HARINA DE PAPA NATIVA (solanum tuberosum ssp.), VARIEDADES YEMA DE HUEVO Y SANTA ROSA CON SABOR A MORA Y TAXO
+    `,
+    'subopcion2.7': `
+        • ESTUDIO ACELERADO DE DIABETES COMO FACTOR PREDISPONENTE PARA ARTERIOSCLEROSIS EN ROTANES
+        • EVALUACIÓN DE LA PROMOCIÓN DE CAMPAÑAS DE SALUD PREVENTIVA Y SU INCIDENCIA EN LA SATISFACCIÓN DE LA COMUNIDAD DE LA PROVINCIA DE TUNGURAHUA
+        • BARRERAS PARA LA DETECCIÓN DEL CÁNCER PROSTÁTICO EN LA PROVINCIA DE TUNGURAHUA
+    `,
+    'subopcion2.8': `
+        • ANÁLISIS SEMIÓTICO DE LA VESTIMENTA DE PUEBLOS INDÍGENAS DEL ECUADOR: SARAKURO, SALASAKA, CHIBULEO, NATABUELA Y OTAVALO
+        • MEJORAMIENTO DEL PROCESO DE SUAVIZADO DE LA FIBRA DE CABUYA PARA ELABORAR GÉNEROS TEXTILES
+        • LA ARQUITECTURA COLONIAL EN QUITO: ESTUDIO DE SU CONSTRUCCIÓN, GEOMETRÍA Y COMPORTAMIENTO MECÁNICO
+    `,
+    'subopcion2.9': `
+        • SIN INFORMACIÓN
+    `,
+    'subopcion2.10': `
+        • SISTEMA DE GESTIÓN DE DOCUMENTOS PARA AGILIZAR LOS PROCESOS INTERNOS DE LA FACULTAD DE INGENIERÍA EN SISTEMAS, ELECTRÓNICA E INDUSTRIAL
+        • DISEÑO E IMPLEMENTACIÓN DE SISTEMAS MECATRÓNICOS EN LABORATORIO VIRTUAL
+        • IMPLEMENTACIÓN DEL LABORATORIO DE PROCESAMIENTO DIGITAL DE SEÑALES PARA EL DESARROLLO DE PROYECTOS DE INVESTIGACIÓN EN LA CARRERA DE INGENIERÍA EN ELECTRÓNICA Y COMUNICACIONES DE LA FISEI-UTA
+    `,
+    'subopcion2.11': `
+        • ESTRATEGIAS DE EDU-ENTRETENIMIENTO (COMUNICACIÓN EN SALUD) PARA LA REDUCCIÓN DE LA VIOLENCIA Y SEXISMO EN JÓVENES Y ADOLESCENTES AMBATEÑOS
+        • CREACIÓN DE PERSONERÍA JURÍDICA ADECUADA PARA LAS EMPRESAS FAMILIARES
+        • SOBRE LA CONSTRUCCIÓN SOCIAL DEL MIEDO. RELATOS SOBRE LOS ALCANCES DE LAS VIOLENCIAS ENTRE JÓVENES
+    `,
+    // Agrega más información según sea necesario
+};
+
+
+    // Obtén y muestra información de la subopción seleccionada
+    const informacion = informacionSubopciones[subopcion] || 'Información no disponible';
+    detallesOpcionProyecto.innerText = informacion;
+    detallesOpcionProyecto.style.display = 'block'; // Asegúrate de que el contenedor sea visible
+}
+
+function toggleOpcionProyecto(opcion) {
+    const subsubmenu = document.getElementById(`subsubmenu${opcion}`);
+    const detallesOpcionProyecto = document.getElementById('detallesOpcionProyecto');
+
+    // Oculta todos los submenús
+    const submenues = document.getElementsByClassName('subsubmenu');
+    for (let i = 0; i < submenues.length; i++) {
+        submenues[i].style.display = 'none';
+    }
+
+    // Si el submenú correspondiente está actualmente oculto, muéstralo; de lo contrario, ocúltalo
+    subsubmenu.style.display = subsubmenu.style.display === 'none' ? 'block' : 'none';
+
+    // Oculta el contenedor de detalles hasta que se seleccione una subopción
+    detallesOpcionProyecto.style.display = 'none';
+}
+
+    </script>
+        <!-- Pie de Página -->
+        <footer>
+            <p>&copy; 2023 Universidad Técnica de Ambato</p>
+        </footer>
+
+</body>
+
+</html>

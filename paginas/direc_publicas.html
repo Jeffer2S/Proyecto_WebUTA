@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/paginas_direc.css">
+</head>
+
+<body>
+    <section class="section-direc">
+
+        <section class="contenedor">
+            <section class="director">
+                <h2>Dr. Juan Francisco Mora</h2>
+                <h4>jf.mora@uta.edu.ec</h4>
+                <h2>DIRECTOR</h2>
+            </section>
+
+            <!-- -------- mision ---------->
+            <section class="mision">
+                <h2 class="titulo-mision">MISION</h2>
+                <p>La Dirección de Comunicación y Relaciones Públicas se encarga de planificar, establecer e implementar
+                    procesos de producción de contenidos y relaciones públicas institucionales, para comunicar las
+                    decisiones, directrices y acciones de la gestión institucional a los organismos públicos nacionales
+                    y sociedad en general; y el mercadeo de la oferta académica institucional y otros servicios a la
+                    sociedad. Le corresponderá supervisar y coordinar, con los responsables directos de los medios de
+                    comunicación de que disponga la universidad, el cumplimiento de sus labores y su alineamiento con
+                    los intereses institucionales y la orientación del Rectorado.</p>
+            </section>
+
+            <section class="tabla">
+                <!-- Pestañas -->
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'tab1')">Horario Atencion</button>
+                    <button class="tablinks" onclick="openTab(event, 'tab2')">Dirección</button>
+                    <button class="tablinks" onclick="openTab(event, 'tab3')">Ubicación</button>
+                    <button class="tablinks" onclick="openTab(event, 'tab4')">Teléfonos</button>
+                    <button class="tablinks" onclick="openTab(event, 'tab5')">Correo eletrónicos</button>
+                    <button class="tablinks" onclick="openTab(event, 'tab6')">Servicion</button>
+                </div>
+
+                <div id="tab1" class="tabcontent"> <!-- Contenido de cada pestaña -->
+                    <p>De Lunes a Viernes 08h30 a 12h30 y 14h30 a 18h30</p>
+                </div>
+
+                <div id="tab2" class="tabcontent"> <!-- Contenido de cada pestaña -->
+                    <p>Av. Los Chasquis y Río Payamino</p>
+                </div>
+
+                <div id="tab3" class="tabcontent"> <!-- Contenido de cada pestaña -->
+                    <p>Edificio Epsilón (nuevo edificio de Ciencias Administrativas), primer piso Rectorado - Campus
+                        Huachi</p>
+                </div>
+
+                <div id="tab4" class="tabcontent"> <!-- Contenido de cada pestaña -->
+                    <p>03-3700090 Ext. 83518 - 03-2521081 Ext. 100-147-104</p>
+                </div>
+
+                <div id="tab5" class="tabcontent"> <!-- Contenido de cada pestaña -->
+                    <p>comunicacionuta@uta.edu.ec</p>
+                </div>
+
+                <div id="tab6" class="tabcontent"> <!-- Contenido de cada pestaña -->
+                    <p>* Producción de contenidos comunicacionales, y relaciones públicas institucionales. Comunica las
+                        decisiones, directrices y acciones de la gestión institucional de la Universidad Técnica de
+                        Ambato. Está a cargo del mercadeo de la oferta académica institucional y otros servicios a la
+                        Sociedad. Supervisa y coordina los medios de comunicación de la UTA.</p>
+                </div>
+
+            </section>
+
+
+        </section>
+        <script>
+            "use strict";
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Mostrar la pestaña 1 por defecto
+            document.getElementById("tab1").style.display = "block";
+            document.getElementsByClassName("tablinks")[0].className += " active";
+        </script>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Menú con carga de información</title>
+    <link rel="stylesheet" href="../styles/direc_academicas.css" />
+    
+
+<body>
+    <div id="menu">
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Rectorado
+                </div>
+                <div class="accordion-content">
+                    <a href="#" onclick="toggleSIPiframe('direc_riesgos')">Dirección de Gestión de Riesgos</a>
+                    <a href="#" onclick="toggleSIPiframe('direc_calidad')">Dirección de Gestión de Calidad</a>
+                    <a href="#" onclick="toggleSIPiframe('direc_financiera')">Dirección Financiera</a>
+                    <a href="#" onclick="toggleSIPiframe('direc_publicas')">Dirección de Comunicación y Relaciones Públicas</a>
+                    <a href="#" onclick="toggleSIPiframe('direc_cultura')">Dirección de Cultura</a>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Académico
+                </div>
+                <div class="accordion-content">
+                    <a href="#" onclick="toggleSIPiframe('direc_educacion')">Dirección de Educación Continua, a Distancia y Virtual</a>
+                    <a href="#" onclick="toggleSIPiframe('direc_academica')">Dirección Académica</a>
+            </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Investigación
+                </div>
+                <div class="accordion-content">
+                    <a href="#" onclick="toggleSIPiframe('direc_vinculacion')">Dirección de Vinculación con la Sociedad</a>
+                    <a href="#" onclick="toggleSIPiframe('direc_innovacion')">Dirección de Innovación y Emprendimiento</a>
+                    <a href="#" onclick="toggleSIPiframe('direc_investigacion')">Dirección de Investigación y Desarrollo</a>
+            </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Adminitrativo 
+                </div>
+                <div class="accordion-content">
+                    <a href="#" onclick="toggleSIPiframe('direc_bienestar')">Dirección de Bienestar Universitario</a>
+                    <a href="#" onclick="toggleSIPiframe('direc_infraestructura')">Dirección de Infraestructura Física</a>
+                    <a href="#" onclick="toggleSIPiframe('direc_investig_desarrollo')">Dirección de Investigación y Desarrollo</a>
+                    <a href="#" onclick="toggleSIPiframe('direc_tecnologia')">Dirección de Tecnología de Información y Comunicación</a>
+                    <a href="#" onclick="toggleSIPiframe('direc_administrativa')">Dirección Administrativa</a>
+                    <a href="#" onclick="toggleSIPiframe('direc_talento')">Dirección de Talento Humano</a>
+
+            </div>
+            </div>
+            <!--
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        Centro de posgrado
+                    </div>
+                    <div class="accordion-content">
+                        <a href="#" id="SIP" onclick="toggleSIP()">Sitio Web Posgrado </a>
+                        <a href="#" onclick="toggleContent('jefferson2')">Postulaciones Posgrado</a>
+                    </div>
+                </div>
+            -->
+        </div>
+    </div>
+
+    <div id="contenedor">
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            toggleSIPiframe('direc_riesgos');
+        });
+        // ********************************************
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('mouseover', () => {
+                header.parentElement.classList.add('active');
+            });
+
+            header.addEventListener('mouseout', () => {
+                header.parentElement.classList.remove('active');
+            });
+        });
+
+        // ********************************************
+
+        function toggleContent(option) {
+            const contentDiv = document.getElementById("contenedor");
+            contentDiv.innerHTML = "";
+            contentDiv.innerHTML = '<div id="contenido"></div>';
+            const divsToRemove = contentDiv.querySelectorAll(
+                "div[id^='jefferson']"
+            );
+
+            divsToRemove.forEach((div) => {
+                contentDiv.removeChild(div);
+            });
+
+            const contentFile = `./${option}.html`;
+            fetch(contentFile)
+                .then((response) => response.text())
+                .then((data) => {
+                    const newDiv = document.createElement("div");
+                    newDiv.id = option;
+                    newDiv.innerHTML = data;
+                    contentDiv.appendChild(newDiv);
+                });
+        }
+        // ********************************************
+        function toggleSIP() {
+            const contentDiv = document.getElementById("contenedor");
+            contentDiv.innerHTML = "";
+
+            const iframe = document.createElement("iframe");
+            iframe.src = "https://deadv.uta.edu.ec/";
+            iframe.style.display = "flex"
+            iframe.style.width = "100%";
+            iframe.style.height = "100%";
+            iframe.style.margin = "0"
+            iframe.style.padding = "0"
+            contentDiv.appendChild(iframe);
+        }
+
+        function toggleSIPiframe(direccion) {
+            const contentDiv = document.getElementById("contenedor");
+            contentDiv.innerHTML = "";
+
+            const iframe = document.createElement("iframe");
+            iframe.src = `./${direccion}.html`;
+            iframe.style.display = "flex"
+            iframe.style.width = "100%";
+            iframe.style.height = "100%";
+            iframe.style.margin = "0"
+            iframe.style.padding = "0"
+            iframe.style.border="0"
+
+            contentDiv.appendChild(iframe);
+        }
+    </script>
+
+</body>
+
+</html>

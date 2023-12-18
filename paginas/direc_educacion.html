@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/paginas_direc.css" />
+</head>
+
+<body>
+    <section class="section-direc">
+        <section class="contenedor">
+            <section class="director">
+                <h2>PhD. Carlos Fernando Meléndez Tamayo</h2>
+                <h4>cmelendez77@uta.edu.ec</h4>
+                <h2>DIRECTOR</h2>
+            </section>
+
+            <!-- -------- mision ---------->
+            <section class="mision">
+                <h2 class="titulo-mision">MISION</h2>
+                <p>
+                    Dirección de Educación Continua tiene como misión planificar, organizar, dirigir, evaluar y
+                    retroalimentar el sistema académico de educación continua interna y externa, así como también, el
+                    sistema académico de educación a distancia y virtual y otras modalidades, ejecutando procesos de
+                    programación de las actividades académicas, verificando requisitos y su cumplimiento; procurando la
+                    estandarización y mejoramiento de los procedimientos académicos de los programas de tercer y cuarto
+                    nivel, cursos y programas de educación continua interna y externa, desarrollados en las distintas
+                    modalidades de acuerdo con la demanda de la sociedad.
+                </p>
+            </section>
+
+            <section class="tabla">
+                <!-- Pestañas -->
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'tab1')">
+                        Horario Atencion
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab2')">
+                        Dirección
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab3')">
+                        Ubicación
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab4')">
+                        Teléfonos
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab5')">
+                        Correo eletrónicos
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'tab6')">
+                        Servicion
+                    </button>
+                </div>
+
+                <div id="tab1" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>
+                        Lunes a Viernes de 08:00 a 13:00 y 14:00 a 17:00
+                    </p>
+                </div>
+
+                <div id="tab2" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>Calle Rocafuerte entre Quito y Mariano Castillo</p>
+                </div>
+
+                <div id="tab3" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>Campus Educación Continua</p>
+                </div>
+
+                <div id="tab4" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>(03) 282 - 4804</p>
+                    <p>WhatsApp: 0998918159</p>
+                </div>
+
+                <div id="tab5" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>educacionvirtual@uta.edu.ec</p>
+                </div>
+
+                <div id="tab6" class="tabcontent">
+                    <!-- Contenido de cada pestaña -->
+                    <p>
+                        * Capacitar a profesionales,docentes, estudiantes, personal administrativo, trabajadores y
+                        público en general, a través de las diferentes modalidades, capaces de ofrecer soluciones en el
+                        campo humano, tecnológico y empresarial, impulsando y participando en los cambios que requiere
+                        la sociedad para mejorar el nivel de vida integral de la población y el de los alumnos a través
+                        del conocimiento guiado, materiales didácticos de apoyo, estímulos académicos y becas.
+                    </p>
+                    <p>
+                        * Viabilizar un sistema multimedia de combinación bi-direccional que contribuya a mejorar el
+                        desempeño institucional de la DEaDV, para lo cual se integrarán las modernas tecnologías, así
+                        como también, procesos pedagógicos, a fin de garantizar su calidad, propiciando su depuración y
+                        mejoramiento continuo.
+                    </p>
+                    <p>
+                        * Fomentar procesos de aprendizaje autónomos, activos, dinámicos e interactivos,considerando las
+                        posibilidades educativas que ofrece un entorno virtual de aprendizaje, con la adecuada
+                        infraestructura física y tecnológica para impartir de manera eficiente los estudios a distancia
+                        y virtual que se ofrecen.
+                    </p>
+                    <p>
+                        * Utilizar las Tecnologías de Información y Comunicación como herramientas en el modelo
+                        innovador.
+                    </p>
+                </div>
+            </section>
+        </section>
+        <script>
+            "use strict";
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                        " active",
+                        ""
+                    );
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Mostrar la pestaña 1 por defecto
+            document.getElementById("tab1").style.display = "block";
+            document.getElementsByClassName("tablinks")[0].className += " active";
+        </script>
+    </section>
+</body>
+
+</html>

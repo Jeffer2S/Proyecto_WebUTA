@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+    <style>
+        .nav-link {
+            cursor: pointer;
+            color: #000000 !important;
+        }
+
+        .nav-link.active {
+            background-color: rgb(169, 169, 169) !important;
+            /* Cambié el color a gris */
+            color: #ffffff !important;
+            /* Cambié el color del texto a blanco */
+        }
+
+        .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.active {
+            color: #ffffff !important;
+            /* Color del texto blanco para las opciones activas en la lista de navegación */
+            background-color: rgb(209, 31, 31) !important;
+            /* Cambié el color a gris */
+        }
+
+        .tab-content {
+            margin-top: 20px;
+            /* Añade espacio entre el texto y la lista de navegación */
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: rgb(236, 8, 8); 
+            color: #ffffff; /* Color del texto blanco */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        a.button:hover {
+            background-color: #d83c3c; 
+        }
+
+        /* Estilos para el espacio debajo del botón */
+        .content-below-button {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="d-flex align-items-start">
+            <!-- Menú Vertical -->
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="Rectorado-tab" data-bs-toggle="pill" data-bs-target="#Rectorado"
+                    type="button" role="tab" aria-controls="Rectorado" aria-selected="true">Rectorado</button>
+                <button class="nav-link" id="SecretariaGeneral-tab" data-bs-toggle="pill"
+                    data-bs-target="#SecretariaGeneral" type="button" role="tab" aria-controls="SecretariaGeneral"
+                    aria-selected="false">Secretaria General</button>
+                <button class="nav-link" id="Procuradoria-tab" data-bs-toggle="pill" data-bs-target="#Procuradoria"
+                    type="button" role="tab" aria-controls="Procuradoria" aria-selected="false">Procuraduria</button>
+                    <button class="nav-link" id="Vicerrectorado-tab" data-bs-toggle="pill" data-bs-target="#Vicerrectorado"
+                    type="button" role="tab" aria-controls="Vicerrectorado" aria-selected="false">Vicerrectorado Academico</button>
+                <button class="nav-link" id="Biblioteca-tab" data-bs-toggle="pill" data-bs-target="#Biblioteca"
+                    type="button" role="tab" aria-controls="Biblioteca" aria-selected="false">Biblioteca UTA</button>
+                <button class="nav-link" id="Investigacion-tab" data-bs-toggle="pill" data-bs-target="#Investigacion"
+                    type="button" role="tab" aria-controls="Investigacion" aria-selected="false">Vicerrectorado Investigacion</button>
+                <button class="nav-link" id="Administrativo-tab" data-bs-toggle="pill" data-bs-target="#Administrativo"
+                    type="button" role="tab" aria-controls="Administrativo" aria-selected="false">Vicerrectorado Administrativo</button>
+            </div>
+
+            <!-- Contenido -->
+            <div class="tab-content" id="v-pills-tabContent">
+                <!-- Contenido de la sección "Rectorado" -->
+                <div class="tab-pane fade show active" id="Rectorado" role="tabpanel" aria-labelledby="Rectorado-tab">
+                    <!-- Contenido específico para la sección "Rectorado" -->
+                    <img src="imagenes\rectorado.webp" alt="Imagen Rectorado" style="max-width: 80%; height: auto;">
+                    <!-- Lista de navegación dentro de "Rectorado" -->
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#horario-Rectorado">Horario de
+                                atención</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#direccion-Rectorado">Dirección</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#ubicacion-Rectorado">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#telefonos-Rectorado">Teléfonos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#correo-Rectorado">Correo electrónico</a>
+                        </li>
+                    </ul>
+
+                    <!-- Contenido de las pestañas dentro de "Rectorado" -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="horario-Rectorado">
+                            De Lunes a Viernes de 08h30 a 12h30 y de 14h30 a 18h30
+                        </div>
+                        <div class="tab-pane fade" id="direccion-Rectorado">
+                            Av. Colombia y Chile
+                            <br>Av. Los Chasquis y Río Payamino
+                        </div>
+                        <div class="tab-pane fade" id="ubicacion-Rectorado">
+                            Edificio principal - Campus Ingahurco
+                            <br>Edificio Epsilón (nuevo edificio de Ciencias Administrativas) - Campus Huachi
+                        </div>
+                        <div class="tab-pane fade" id="telefonos-Rectorado">
+                            * RECTORADO INGAHURCO:
+                            <br>03-2521081 - 03-2523039
+                            <br>Inf. 100-101
+                            <br>Despacho: 103-104-147-167
+
+                            <br><br>* RECTORADO HUACHI:
+                            <br>03-3700090 Ext. 83518 - 83519
+                        </div>
+                        <div class="tab-pane fade" id="correo-Rectorado">
+                            utarectorado@uta.edu.ec
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido de la sección "Secretaria General" -->
+                <div class="tab-pane fade" id="SecretariaGeneral" role="tabpanel"
+                    aria-labelledby="SecretariaGeneral-tab">
+                    <!-- Contenido específico para la sección "Secretaria General" -->
+                    <img src="imagenes\rectorado.webp" alt="Imagen Rectorado" style="max-width: 80%; height: auto;">
+                    <center>
+                        <span style="color: red;">Dr. José Romo Santana</span>
+                        <br>jl.romo@uta.edu.ec
+                        <br><span style="color: red;">SECRETARIO GENERAL</span>
+                    </center>
+                    <br>MISIÓN:
+
+                    La Secretaria General tiene la misión de gestionar los documentos de archivo a nivel institucional;
+                    administrar el acervo documental que posee la institución;
+                    certificar los actos del Honorable Consejo Universitario; así como, administrar y controlar el
+                    sistema interno para registro de titulaciones y el acceso a la plataforma
+                    del órgano rector de la política pública de la educación superior. <br>
+                    <!-- Lista de navegación dentro de "Secretaria General" -->
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#horario-secretaria">Horario de
+                                atención</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#direccion-secretaria">Dirección</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#ubicacion-secretaria">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#telefonos-secretaria">Teléfonos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#correo-secretaria">Correo electrónico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#servicios-secretaria">Servicios</a>
+                        </li>
+                    </ul>
+
+                    <!-- Contenido de las pestañas dentro de "Secretaria General" -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="horario-secretaria">
+                            De Lunes a Viernes de 08h00 a 13h00 y de 14h30 a 17h30
+                        </div>
+                        <div class="tab-pane fade" id="direccion-secretaria">
+                            Av. Colombia y Chile
+                        </div>
+                        <div class="tab-pane fade" id="ubicacion-secretaria">
+                            Edificio. - Campus Ingahurco
+                        </div>
+                        <div class="tab-pane fade" id="telefonos-secretaria">
+                            <br>*03-2521081 – 03-2521021
+                            <br>Oficina Secretaría General Ext: 111
+
+                            <br><br>Oficina HCU Ext: 223
+                        </div>
+                        <div class="tab-pane fade" id="correo-secretaria">
+                            secretariageneral@uta.edu.ec
+                        </div>
+                        <div class="tab-pane fade" id="servicios-secretaria">
+                            <br>Asesoría en materia de gestión documental
+                            <br>Certificación y validación de documentos institucionales
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido de la sección "Procuraduria" -->
+                <div class="tab-pane fade" id="Procuradoria" role="tabpanel" aria-labelledby="Procuradoria-tab">
+                    <!-- Contenido específico para la sección "Procuraduria" -->
+                    <img src="imagenes\rectorado.webp" alt="Imagen Rectorado" style="max-width: 80%; height: auto;">
+                    <center>
+                        <span style="color: red;">Abg. Lorena Alejandra Zeggane Medina</span>
+                        <br>la.zeggane@uta.edu.ec
+                        <br><span style="color: red;">PROCURADORA GENERAL</span>
+                    </center>
+                    <br>MISIÓN:
+
+                    La Procuraduría tiene la misión de asesorar, dirigir y desarrollar un trabajo planificado y
+                    coordinado, proporcionando seguridad jurídica a la Universidad Técnica de Ambato,
+                    asegurando que las actuaciones de la entidad se encuentren enmarcadas en el ordenamiento jurídico
+                    vigente; su accionar comprende principalmente: procedimientos administrativos internos y externos;
+                    patrocinio judicial,
+                    extrajudicial y solución alternativa de conflictos; y, asesoría legal integral. Deberá salvaguardar
+                    los intereses de la institución y de la comunidad universitaria, debiendo coordinar con las
+                    diferentes unidades
+                    académicas y administrativas, la gestión para la facilitación normativa de esta casa de
+                    estudios.<br>
+                    <!-- Lista de navegación dentro de "Procuraduria" -->
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#horario-Procuraduria">Horario de
+                                atención</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#direccion-Procuraduria">Dirección</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#ubicacion-Procuraduria">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#telefonos-Procuraduria">Teléfonos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#correo-Procuraduria">Correo electrónico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#servicios-Procuraduria">Servicios</a>
+                        </li>
+                    </ul>
+
+                    <!-- Contenido de las pestañas dentro de "Procuraduria" -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="horario-Procuraduria">
+                            De Lunes a Viernes de 08h30 a 12h30 y de 14h30 a 18h30
+                        </div>
+                        <div class="tab-pane fade" id="direccion-Procuraduria">
+                            Av. Colombia y Chile
+                        </div>
+                        <div class="tab-pane fade" id="ubicacion-Procuraduria">
+                            Edificio. - Campus Ingahurco
+                        </div>
+                        <div class="tab-pane fade" id="telefonos-Procuraduria">
+                            <br>03-2523040 – 03-2521021
+                            <br>Despacho del Procurador Ext. 117
+                            <br>Secretaría Ext. 118
+                            <br>Analistas Jurídicos Ext. 226
+                        </div>
+                        <div class="tab-pane fade" id="correo-Procuraduria">
+                            procuraduria@uta.edu.ec
+                        </div>
+                        <div class="tab-pane fade" id="servicios-Procuraduria">
+                            <p>Asesoría legal integral<br>
+                                Absolución de consultas extraoficiales de las distintas autoridades y miembros de la
+                                comunidad universitaria<br>
+                                Elaborar informes y criterios jurídicos<br>
+                                Ejecutar procedimientos administrativos internos y externos<br>
+                                Elaborar contratos de compras públicas de la DIDE y la DIVISO<br>
+                                Elaborar contratos de Becas, comisión de servicios, de auspicio económico (DIDE); y, de
+                                prestación de servicios profesionales<br>
+                                Elaborar convenios de Devengación<br>
+                                Revisar y legalizar contratos civiles por servicios profesionales de POSGRADO y de la
+                                DEADV<br>
+                                Elaborar Convenios de Pago<br>
+                                Revisar la legalidad de los Convenios de carácter interinstitucional nacionales e
+                                internacionales y emitir los informes jurídicos pertinentes (DIRENI)<br>
+                                Defensa y patrocinio judicial, extrajudicial y solución alternativa de conflictos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido de la sección "Biblioteca" -->
+                <div class="tab-pane fade" id="Biblioteca" role="tabpanel" aria-labelledby="Biblioteca-tab">
+                    <!-- Contenido específico para la sección "Biblioteca" -->
+                    <img src="imagenes\viceAdministrativo.webp" alt="Imagen Rectorado" style="max-width: 80%; height: auto;">
+                    <center>
+                        <span style="color: red;">Lcda. MSc. Cristina Mantilla</span>
+                        <br>crismantilla@uta.edu.ec
+                        <br><span style="color: red;">BIBLIOTECARIA - COORDINACIÓN</span>
+                    </center>
+                    <br>MISIÓN:
+
+                    La Biblioteca tiene como misión gestionar un entorno de información en continua evolución, para
+                    contribuir a la Docencia, la Investigación e Innovación y la Vinculación con la Sociedad,
+                    mediante estrategias y servicios de excelencia, de forma sostenible y responsable, que promuevan la
+                    generación y la transferencia del conocimiento, respondiendo a las necesidades de la comunidad
+                    universitaria y público en general.<br>
+
+                    <a href="https://publications.ebsco.com/" target="_blank" class="button">Publicaciones para la UTA</a>
+                    <!-- Lista de navegación dentro de "Biblioteca" -->
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#horario-Biblioteca">Horario de
+                                atención</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#direccion-Biblioteca">Dirección</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#ubicacion-Biblioteca">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#telefonos-Biblioteca">Teléfonos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#correo-Biblioteca">Correo electrónico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#servicios-Biblioteca">Servicios</a>
+                        </li>
+                    </ul>
+
+                    <!-- Contenido de las pestañas dentro de "Biblioteca" -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="horario-Biblioteca">
+                            De Lunes a Viernes de 08h30 a 12h30 y de 14h30 a 18h30
+                        </div>
+                        <div class="tab-pane fade" id="direccion-Biblioteca">
+                            Av. Los chasquis y Rio Guayabamba – Primer piso Facultad de Diseño y Arquitectura
+                        </div>
+                        <div class="tab-pane fade" id="ubicacion-Biblioteca">
+                            Campus Huachi
+                        </div>
+                        <div class="tab-pane fade" id="telefonos-Biblioteca">
+                            <br>Bibliotecaria - Coordinación Lcda. MSc. Cristina Mantilla Cel: 099 946 1708
+                            <br>Bibliotecario Biblioteca General
+                            <br>Ing. Juan Carlos Altamirano
+                            <br>Correo: jc.altamiranoc@uta.edu.ec
+                            <br>Cel: 0 99 505 3645
+
+                            <br><br>Bibliotecaria Tiflobiblioteca
+                            <br>Lcda. Patricia Lema
+                            <br>Correo: jp.lema@uta.edu.ec
+                            <br>Cel: 098 402 4567
+
+                            <br><br>Secretaria de Biblioteca General – Información
+                            <br>Ing. Giovanna Bermudez
+                            <br>Correo: ga.bermudez@uta.edu.ec
+                            <br>Cel: 0986303569
+                        </div>
+                        <div class="tab-pane fade" id="correo-Biblioteca">
+                            bibliotecas.uta@uta.edu.ec
+                        </div>
+                        <div class="tab-pane fade" id="servicios-Biblioteca">
+                            <p>Art. 5.- Las Bibliotecas presentarán servicios de circulación, referencia, dirección y asesoramiento en investigación.</p>
+                            <p>Art. 6.- El servicio de circulación será interno y externo. a) El servicio interno estará garantizado para todos: profesores, empleados, trabajadores, y estudiantes con el carnet y, para el público en general además con la cédula de identidad. b) Al préstamo externo o a domicilio tendrán derecho solamente personas que pertenezcan a la institución sujetos a: - Estudiantes con cédula de identidad y carnet de bibliotecas. - Profesores, empleados y trabajadores con carnet.</p>
+                            <p>Art. 7.- El tiempo en el préstamo a domicilio no podrá extenderse por más de cuatro días.</p>
+                            <p>Art. 8.- Los Bibliotecarios se reservan el derecho a requerir al usuario la devolución de préstamos antes del tiempo fijado; negar cualquier préstamo previa la correspondiente explicación.</p>
+                            <p>Art. 9.- En caso de préstamos a departamentos, instituciones o grupos se requerirá de una persona responsable directa del préstamo y su devolución.</p>
+                            <p>Art. 10.- Los profesores empleados y trabajadores de la Universidad Técnica de Ambato, que salieren de vacaciones o para su liquidación, deberán entregar todos los materiales. La tesorería de la UTA y las secretarias de cada Facultad, exigirán el comprobante de no adeudar en las bibliotecas.</p>
+                            <p>Art. 11.- Al terminar el año lectivo, los estudiantes devolverán todas las obras. En caso de no cumplir con estas disposiciones, no podrán realizar ningún trámite en la Institución.</p>
+                            <p>Art. 12.- Los egresados de las diferentes Facultades, antes de optar por el título profesional, presentarán el respectivo certificado de no deber obras.</p>
+                            <p>Art. 13.- Se abrirá un índice de usuarios con los nombres de los mismos, y sus direcciones y más datos que lo identifiquen, tomados de los documentos que así lo acrediten, el mismo que será distribuido entre las bibliotecas de la Universidad.</p>             
+                            <p>Art. 14.- El personal está obligado a presentar servicios de información y referencia a todos los usuarios, presentará también servicios de elaboración de bibliografías especializadas.</p>                       
+                            <p>Art. 15.- Prestará sus servicios en forma directa a la persona interesada y de ninguna manera a través de intermediarios. Para establecer esta condición, la persona acudirá al índice de usuarios.</p>
+                            <p>Art. 16.- Los siguientes fondos y recursos de la Biblioteca son de uso exclusivo dentro de la sala y no prestables a domicilio.</p>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido de la sección "Vicerrectorado Academico" -->
+                <div class="tab-pane fade" id="Vicerrectorado" role="tabpanel" aria-labelledby="Vicerrectorado-tab">
+                    <!-- Contenido específico para la sección "Vicerrectorado Academico" -->
+                    <img src="imagenes\viceAcademico.webp" alt="Imagen Rectorado" style="max-width: 80%; height: auto;">
+                    
+                    <!-- Lista de navegación dentro de "Vicerrectorado Academico" -->
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#horario-Vicerrectorado">Horario de
+                                atención</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#direccion-Vicerrectorado">Dirección</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#ubicacion-Vicerrectorado">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#telefonos-Vicerrectorado">Teléfonos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#correo-Vicerrectorado">Correo electrónico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#contacto-Vicerrectorado">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <!-- Contenido de las pestañas dentro de "Vicerrectorado Academico" -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="horario-Vicerrectorado">
+                            De Lunes a Viernes 08h30 a 12h30 y 14h30 a 18h30
+                        </div>
+                        <div class="tab-pane fade" id="direccion-Vicerrectorado">
+                            Av. Los Chasquis y Río Payamino
+                        </div>
+                        <div class="tab-pane fade" id="ubicacion-Vicerrectorado">
+                            Edificio Académico - Campus Huachi
+                        </div>
+                        <div class="tab-pane fade" id="telefonos-Vicerrectorado">
+                            03-3700090 Ext. 83572
+                        </div>
+                        <div class="tab-pane fade" id="correo-Vicerrectorado">
+                            vicerrectorado.academico@uta.edu.ec
+                        </div>
+                        <div class="tab-pane fade" id="contacto-Vicerrectorado">
+                            Ingeniera Viviana Ortiz Montero
+                            <br>Correo electrónico: vdp.ortiz@uta.edu.ec
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido de la sección "Vicerrectorado Investigacion" -->
+                <div class="tab-pane fade" id="Investigacion" role="tabpanel" aria-labelledby="Investigacion-tab">
+                    <!-- Contenido específico para la sección "Vicerrectorado Investigacion" -->
+                    
+                    <img src="imagenes\viceInvestigacion.webp" alt="Imagen Rectorado" style="max-width: 80%; height: auto;">
+                    <!-- Lista de navegación dentro de "Vicerrectorado Investigacion" -->
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#horario-Investigacion">Horario de
+                                atención</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#direccion-Investigacion">Dirección</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#ubicacion-Investigacion">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#telefonos-Investigacion">Teléfonos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#correo-Investigacion">Correo electrónico</a>
+                        </li>
+                    </ul>
+
+                    <!-- Contenido de las pestañas dentro de "Vicerrectorado Investigacion" -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="horario-Investigacion">
+                            De Lunes a Viernes de 08h30 a 12h30 y 14h30 a 18h30
+                        </div>
+                        <div class="tab-pane fade" id="direccion-Investigacion">
+                            Av. Los Chasquis y Río Payamino
+                        </div>
+                        <div class="tab-pane fade" id="ubicacion-Investigacion">
+                            Edificio Académico, cuarto piso - Campus Huachi
+                        </div>
+                        <div class="tab-pane fade" id="telefonos-Investigacion">
+                            03-3700090
+                        </div>
+                        <div class="tab-pane fade" id="correo-Investigacion">
+                            vicerrectorado.investigacion@uta.edu.ec
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido de la sección "Vicerrectorado Administrativo" -->
+                <div class="tab-pane fade" id="Administrativo" role="tabpanel" aria-labelledby="Administrativo-tab">
+                    <!-- Contenido específico para la sección "Vicerrectorado Administrativo" -->
+                    
+                    <img src="imagenes\viceAdministrativo.webp" alt="Imagen Rectorado" style="max-width: 80%; height: auto;">
+                    <!-- Lista de navegación dentro de "Vicerrectorado Administrativo" -->
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#horario-Administrativo">Horario de
+                                atención</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#direccion-Administrativo">Dirección</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#ubicacion-Administrativo">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#telefonos-Administrativo">Teléfonos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#correo-Administrativo">Correo electrónico</a>
+                        </li>
+                    </ul>
+
+                    <!-- Contenido de las pestañas dentro de "Vicerrectorado Administrativo" -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="horario-Administrativo">
+                            De Lunes a Viernes 08h30 a 12h30 y 14h30 a 18h30
+                        </div>
+                        <div class="tab-pane fade" id="direccion-Administrativo">
+                            Av. Colombia y Chile
+                        </div>
+                        <div class="tab-pane fade" id="ubicacion-Administrativo">
+                            Edificio principal - Campus Ingahurco
+                        </div>
+                        <div class="tab-pane fade" id="telefonos-Administrativo">
+                            03-2521005 Ext. 112 - 142 - 144
+                        </div>
+                        <div class="tab-pane fade" id="correo-Administrativo">
+                            vicerrectoradoadministrativo@uta.edu.ec
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

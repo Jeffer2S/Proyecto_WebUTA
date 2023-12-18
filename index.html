@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <title>Universidad Técnica de Ambato - Inicio</title>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Universidad Técnica de Ambato</h1>
+    </header>
+
+    <!-- Menú de Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#" onclick="cargarContenido('inicio')"><img src="./imagenes/logo uta.webp" alt="Logo UTA"></a></li>
+            <li><a href="#" onclick="cargarContenido('inicio')">Inicio</a></li>
+
+            <li>
+                <div class="portal_academico">Institución
+                    <div class="menu_academico">
+                        <a href="#" onclick="cargarContenido('inst_autoridades')">Autoridades</a>
+                        <a href="#" onclick="cargarContenido('inst_normativas')">Normativas Biblioteca</a>
+                        <a href="#" onclick="cargarContenido('inst_historia')">Historia</a>
+                        <a href="#" onclick="cargarContenido('inst_filosofia')">Filosofía</a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="portal_academico">Portal Académico
+                    <div class="menu_academico">
+                        <a href="#" onclick="abrirAulas(); return false;" target="_blank">Aulas Virtuales</a>
+                        <a href="#" onclick="abrirSI(); return false;" target="_blank">Sistema Integrado SI UTA</a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="portal_academico">Oferta Académica
+                    <div class="menu_academico">
+                        <a href="#" onclick="cargarContenido('facultades')">Facultades</a>
+                        <a href="#" onclick="abrirCentrodeIdiomas()">Centro de Idiomas</a>
+                        <a href="#" onclick="cargarContenido('posgrado')">Posgrado</a>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="#" onclick="cargarContenido('investigacion')">Investigación</a></li>
+
+            <li>
+                <div class="portal_academico">Servicios
+                    <div class="menu_academico">
+                        <a href="#" onclick="cargarContenido('servicios')">Servicios</a>
+                        <a href="#" onclick="cargarContenido('ser_salIntegral')">Salud Integral</a>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="./paginas/direc_academicas.html">Direcciones Académicas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Contenido dinámico se cargará aquí -->
+        <div id="contenido-dinamico">
+            <h2>Bienvenido a la Universidad Técnica de Ambato</h2>
+            <p>Texto de ejemplo para la página de inicio.</p>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2023 Universidad Técnica de Ambato</p>
+        <p>Campus Académico Huachi<br>Av. Los Chasquis y Río Payamino</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Cargar el contenido de la sección por defecto ("Inicio") al cargar la página
+        cargarContenido('inicio');
+
+        // Función para cargar el contenido de una sección específica
+        function cargarContenido(seccion) {
+            var contenidoDinamico = document.getElementById('contenido-dinamico');
+
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // Cambiar el contenido dinámico
+                    contenidoDinamico.innerHTML = xhr.responseText;
+                }
+            };
+
+            if (seccion === 'investigacion') {
+                // En lugar de cargar el contenido con XMLHttpRequest, simplemente abre la página en una nueva ventana
+                window.open('paginas/investigacion.html', '_blank');
+            } else {
+                // Cargar el contenido utilizando XMLHttpRequest para otras secciones
+                xhr.open('GET', 'paginas/' + seccion + '.html', true);
+                xhr.send();
+            }
+        }
+
+        function abrirAulas() {
+            window.open('https://deadv.uta.edu.ec/', '_blank');
+        }
+
+        function abrirSI() {
+            window.open('https://servicios.uta.edu.ec/SistemaIntegrado/Cuenta/Login', '_blank');
+        }
+
+        function abrirPosgrado() {
+            window.location.href = './paginas/posgrado.html';
+        }
+
+        function abrirCentrodeIdiomas() {
+            window.location.href = 'https://www.centrodeidiomasuta.com';
+        }
+    </script>
+</body>
+
+</html>

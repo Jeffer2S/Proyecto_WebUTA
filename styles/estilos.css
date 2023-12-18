@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #f1f1f1c8;
+    /* 100% de la altura de la ventana */
+}
+
+header {
+    background-color: #7a1e19;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+footer {
+    background-color: #7a1e19;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+    border: 1px solid #000000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+nav a img {
+    width: 200px;
+    height: 75px;
+    margin-right: 5px;
+}
+
+main {
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+
+    /* Centra el contenido principal */
+}
+
+#contenido {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+#contenido a {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+.portal_academico {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+.menu_academico {
+    display: block;
+    position: absolute;
+    align-items: center;
+    background-color: #ebe6e6fa;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 300ms ease-out, transform 300ms ease-out;
+}
+
+.menu_academico a {
+    color: #000000;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.portal_academico:hover .menu_academico {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.titulo-facultad{
+    color: #f8f8f8;
+    background: #8e0404fa;
+    font-size: 40px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.cont-facultades{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.facultades{
+    background: #f8f8f8;
+}
+
+.galeria-facultades{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 30%;
+    margin-bottom: 15px;
+    margin-inline: -20px;
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); 
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: conver;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(0, 95%, 24%, 0.7);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #f8f8f8;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+.nom_fac{
+    font-family: 'Times New Roman', serif;
+}
+
+
+.recuadro {
+    border: 1px solid #ccc;
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    margin: 0 20px 10px 0;
+    /* Ajuste de los márgenes */
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    align-items: center;
+    max-width: 650px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.recuadro a {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.recuadro h2 {
+    margin-bottom: 20px;
+}
+
+.SysPosgrado {
+    width: 100%;
+    height: auto;
+}
+
+.imagen-noticia {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+h2 {
+
+    font-family: 'Noto Serif', serif;
+
+    color: white;
+    text-decoration: none;
+}
